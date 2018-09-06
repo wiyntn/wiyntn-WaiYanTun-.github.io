@@ -1,0 +1,202 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+#div
+{
+	 border:1px solid black;
+	 height: 200px;
+	 margin-left: -20px;
+}
+#div ol
+{
+	margin-left: -10px;
+}
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Fourth Year)</p>
+<p>Computer Organization </p>
+<p>Mid Term Examination</p>
+<p>Analysis of Algorithms(CS-403)</p>
+<p>March 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>Defint <b><i id="line">ANY FOUR</i></b><br><span id="right">(8 Marks)</span>
+				<ol type="i">
+					<li>Size of problem</li>
+					<li>Asymptotic time complexity</li>
+					<li>Accumullator</li>
+					<li>Heap</li>
+					<li>Three forms of operand</li>
+					<li>Recursion</li>
+				</ol>
+			</li><br><br><br><br><br><br>
+			<li>Briefly explain <b><i id="line">ANY THREE</i></b><span id="right">(12 Marks)</span>
+				<ol type="i">
+					<li>Difference between RAM and RASP</li>
+					<li>Worst case time complexity and Expected time complexity</li>
+					<li>Divide-and-Conquer Approach</li>
+					<li>Dynamic Programming</li>
+				</ol>
+
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Consider a RAM program that accepts the language over the input alphabet {1, 2, 3} consisting of all strings with the same number of 1's, 2's and 3's. The program reads each input symbol into register1. The register2, register3, and register4 keep the counter of number of 1s, 2s and 3s respectively. When the endmarker 0 is encountered, the program checks that counters are equal (or) not. If equal print '1' for accept and '0' for reject then halts. We assume that 0,1,2 and 3 are the only input symbols for this problem.<span id="right">(10 Marks)</span>
+			</li>
+			<li>Analyze the time and space complexities of above problem uner (i) the uniform and (ii) Logarithmic cost.<span id="right">(10 Marks)</span>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li><ol type="a">
+		<li>
+	
+		Simulate the following RAM istruction into RASP.(Remark: You do not need to consider for the cost/complexity of RAM and RASP.)<br>
+		(i)LOaD *i (ii)WRITE*i<span id="right">( 8 Marks)</span>
+		</li>
+		<li>
+	
+		Specify the Turing machine which input tape <i>Tapel</i> includes two binary iintegers '0' and '1' as any order, for example: 11010010001. Then accept if the number of '1's is equal to number of 0's. You should copy input '0' on <i>Tape2</i> and '1' on <i>Tape3</i>. Then chech input tape is accepted or not.<span id="right">(12 Marks)</span>
+		</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br>
+	<li>
+	<ol type="a">
+		<li>Write the sequence of bit operations to compute the product of two 2-bit integers and draw the logic circuit.<span id="right">(6 Marks)</span>
+		</li>
+		<li>
+			Find the minimal number of operations in multiplying the following matrices using the dynamic programming algorithm below:<br>
+			 <span id="right">(14 Marks)</span><br>
+			<table>
+				<tr>
+					<td>M=</td>
+					<td>&nbsp;&nbsp;M1</td>
+					<td>x</td>
+					<td>&nbsp;&nbsp;&nbsp;M2</td>
+					<td>x</td>
+					<td>&nbsp;&nbsp;&nbsp;M3</td>
+					<td>x</td>
+					<td>&nbsp;&nbsp;&nbsp;M4</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>[20x30]</td>
+					<td></td>
+					<td>[30x10]</td>
+					<td></td>
+					<td>[10x50]</td>
+					<td></td>
+					<td>[50x20]</td>
+				</tr>
+			</table>
+			<b>Also fine the order of execution to multiply.</b><br>
+			<div id="div">
+				begin<br>
+				<ol>
+					<li>for i=1 until n do m<sub>ii</sub>=0;</li><br>
+					<li>for L=1 until n-1 do.<br>begin</li>
+					<li>for i=1 until n-L do <br>begin</li>
+					<li>j=i+L;</li>
+					<li>
+						<table>
+							<tr>
+								<td>m<sub>ij</sub>=</td>
+								<td> MIM (m<sub>ik</sub>+m<sub>k+1j</sub>+r<sub>i-1</sub>*r<sub>k</sub>*r<sub>j</sub>);</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>i≤k <b> < </b>j</td>
+							</tr>
+						</table></li>
+				</ol>
+			</div>
+		</li>
+	</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Use the lexicographic sort (fixed length) algorithm to sort the string "add, dad, bad, bed, ace, abd, ebb, bee, acc, aed".<span id="right">(10 Marks)</span>
+			</li>
+			<li>Selection algorithm SELECT (k,S) is to find the k<sup>th</sup> smallest elements in given n elements sequence. In this algorithm, m is a medimu element by finding SELECT (
+				<b style="font-size:1.5em">┌</b>|M|/2<b style="font-size:1.5em">┐</b>,M).
+				Prove that time complexity T(n) of this algorithm is O(n).
+				<br>
+				<span id="right">(10 Marks)</span>
+			</li>
+		</ol>
+	</li>
+
+</ol>
+</body>
+</html>

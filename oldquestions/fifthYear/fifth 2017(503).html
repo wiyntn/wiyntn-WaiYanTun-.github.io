@@ -1,0 +1,111 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left1,.left1
+{
+	float: left;
+}
+#right1,.right1
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol,ul
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+#ma
+{
+	margin-left: -40px;
+}
+
+</style>
+
+</head>
+<body>
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Fifth Year)</p>
+<p>Computer System Fundamentals(CT-503)</p>
+<p>Mid Tearm Examination</p>
+<p>March, 2015</p>
+<p>Zone III</p>
+
+<p id="left1">Answer ALL Questions</p>
+<p id="right1">Time allowed 3hours.</p>
+
+<hr>
+<ol>
+  <li>
+  	<ol type="a">
+  		<li>Define three instruction types and build a datapath in operation for (sub $t1, $t2, $t3) instruction.<b id="right">(10 marks)</b>
+  		</li>
+  		<li>In this problem we have four instructions: lad (lw), store (sw), R-type (add, sub, and or, slt) and branch (beq). Compare the average time between instuctions of a sigle-cycle implementation, in whcih all instructions take one clock cycle to a pipelined implementation. The operation times for the major functional units in this problem are 100ps for menory access, 100ps for ALU operatin and 50ps for register file read or write. Compare the average time between instructions of a single-ccle and pipelined implementation for one million load instructions.<b id="right">(10 Marks)</b></li><br>
+  	</ol><br>
+  </li>
+</ol>
+<ol start="2">
+	<li>
+		<ol type="a">
+			<li>What are the pipeline hazards? Define each hazard with sample instructions.<b id="right">(10 marks)</b></li>
+			<li>Describe the pipelined dependences in the following five instructions equence using simplified datapaths to shw the dependences and how to solve the hazard in the pipelined registers?<b id="right">(10 marks)</b><br>
+				sub $2,$1,$3<br>
+				and $12,$2,$5<br>
+				or $13,$6,$2<br>
+				add $14,$2,$2<br>
+				sw $15,100($2)
+			</li><br>
+		</ol><br>
+	</li>
+</ol>
+<ol start="3">
+	<li>
+		<ol type="a">
+			<li>Explain dynamic pipeline scheduling with three primary units.<b id="right">(10 Marks)</b></li>
+			<li>What is the cache?Describe about the cache types.<b id="right">(10 Marks)</b></li><br>
+		</ol><br>
+	</li><br>
+</ol>
+<ol start="4">
+	<li>
+		<ol type="a">
+			<li>Assume there are three small caches, each consiting of four one-word blocks. Find the number of misses for each cache organization given the following sequence of block address: 0,4,0,6, 10, 4 and 0.<b id="right">(10 marks)</b>
+			</li>
+			<li>How to design the memory systm to support caches. Explain that wich organization is better than others? Assume<br>
+				-1 memory bus clock cycle to send the address<br>
+				-15 memory bus clock cycles for each DRAM access initiated<br>
+				-1 memory bus clock cycle to send a word of data<b id="right">(10 Marks)</b>
+			</li><br>
+		</ol><br>
+	</li><br>
+</ol>
+<ol start="5">
+	<li>
+		<ol type="a">
+			<li>Suppose we have a processor with a base CPI of 1.0, assuming all references hit in the primary cache, and a clock rate of 5 GHz. Assume a main memory access time of 100ns, including all the miss handling. Suppose the miss rate per instruction at the primary cache is 2%. How much faster will the processor be if we add a secondary cache that has a 5ns access time either a hit or a miss and is large enough to reduce the miss rate to main memory to 0.5%?<b id="right">(10 Marks)</b></li>
+			<li>Explain about the virtual memory. Compute the total page table size when there are 4 KB pages and 4 bites per page table entry, assuming 32-bit vitrual address.<b id="right">(10 Marks)</b></li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

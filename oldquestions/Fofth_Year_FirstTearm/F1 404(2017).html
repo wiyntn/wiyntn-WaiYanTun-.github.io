@@ -1,0 +1,241 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+#div
+{
+	 border:1px solid black;
+	 height: 200px;
+	 margin-left: -20px;
+}
+#div ol
+{
+	margin-left: -10px;
+}
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Fourth Year)</p>
+<p>Computer Organization </p>
+<p>Mid Term Examination</p>
+<p>Database Management System(CS-404)</p>
+<p>March 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol type="I">
+	<li>Choose the correct answer(s) for the following statements.
+		<b id="right">(20 marks)</b>
+		<ol>
+			<li>_________ means protecting the data against unauthorized users.<br>
+				(A)Integrity (B)Security (C)Recovery (D)Consistency
+			</li>
+			<li>The set of attributes of relvar R is said to be a candidate key for R if it possesses __________ properties.<br>
+				(A)uniqueness &nbsp;&nbsp;&nbsp;&nbsp;(B)irreducibility <br>(C)uniqueness and irreducibility &nbsp;&nbsp;(D)duplication
+			</li>
+			<li>________ is storing and transmitting sensitive data in encrypted form.<br>
+				(A)Encryption (B)Decryption (C)Cipher text <br>(D)P;ain text
+			</li>
+			<li>In multi-level security, the same data looks different to different users is called_______.<br>
+				(A)data encryption (B)value-dependent (C)value-independern (D)polyinstantiation
+			</li>
+			<li>In public key schema, anyone can ceonvert plain text into cipher text, this schema involves(s)__________.<br>
+				(A)One key (B)two keys (C)three keys (D)four
+		</li>
+		<li>The statement that is executed automatically by the system as a side effect of the modification of the database is ________.<br>
+			(A)backup (B)assertion (C)recovery (D)trigger
+		</li>
+		<li>The integrity constraints cannot be immediately chech but must be deffered to end of transaction called ___________.<br>
+			(A)a type constraint (B)an attribute constraint <br>(C)a relvar constraint (D)a database constraint
+		</li>
+		<li>The integrity constraints CONSTRAINTS DBC3 SP {P#} = P {P#} is referred to as:<br>
+			(A)type constraint (B)attribute constraint <br>(C)relvar constraint (D)database constraint
+		</li>
+		<li>Assume transaction A holds an exclusive lock on tuple t, then a request from some transaction B for a lock either type on t.<br>
+			(A)it will be granted (B)it will be denied (C)it will result in deadlock situation (D)none of these
+		</li>
+		<li>When deadlock occurs, some systems _________ to the application.<br>
+			(A)halt and produce error code (B)handle automatically<br>
+			(C)choose victim and rollback (D)detect and rollback
+		</li>
+		<li>A statistical database is a database that permits queries that ...............<br>
+			(A)legal query (B)sub-query (C)nested query (D)aggregated query
+		</li>
+		<li>________ combines the substitution and permutation approaches to encrypt data.<br>
+			(A)Public Key Encryption (B)Data Encryption Standard (C)RSA Scheme (D)none of these
+		</li>
+		<li>A database in which the system automatically keeps track of all operations performed by users on the regular data is called_________ .<br>
+			(A)request modification (B)security subsystem (C)audit trails 
+			(D)authorization subsystem.
+		</li>
+		<li>The SQL facilities provide for database security other than authoriztion is_________ .<br>
+			(A)GRAINT (B)CONSTRAINT (C)AUTHORITY (D)VIEW
+		</li>
+		<li>Location transpaency in distributed system allows for which of the following?<br>
+			(A)Users to treat the data as if it is at one location<br>
+			(B)Programmers to treat the data as if it is at one location 
+			(C)Both A and B (D)None of these
+		</li>
+		<li>Replication transparency in distributed system has which of the following problem?<br>
+			(A)Concurrency problem (B)Updte propagation problem<br>
+			(C)Query processing problem (D)Network problem
+		</li>
+		<li>The condurrency problems produce wrong results in twocorrect transactions processing because of ________ operations.<br>
+			(A)interleave (B)concurrent (C)controlled interleave (D)uncontrolled interleave
+		</li>
+		<li>The degree of interference in serializable is that a given transaction is prepared to _______ on part of concurrent transactions.<br>
+			(A)ingerleave (B)protect (C)tolerate (D)deny
+		</li>
+		<li>The federated system is also known as ______ in geterogeneous distributed environment.<br>
+			(A)DataJoiner system (B)middleware system (C)multi-database system (D)homogeneous system
+		</li>
+		<li>For heterogeneous dstributed database system, the pronciple "DBMS independence" can be achieved using the technique _________.
+			<br>
+			(A)gateway (B)middleware (C)Joiner (D)all of these
+
+		</li>
+		</ol>
+	</li>
+	<li>
+		An deucation database contains information about an inhouse company education training scheme.For each training scheme, the database contains details of all perquisite courses for that course and all offerings for that course; for each offering, it contains details of all teachers and all student enrollments for that offering. The database also contains information about employees. The relevant relvars are as follows, in outline:<br>
+		COURSE {COURSE#,TITLE}<br>
+		OFFERING {COURSE#,OFF#,OFFDATE,LOCATION}<br>
+		TEACHER {COURSE#,OFF#,EMP#}<br>
+		ENROLLMENT {COURSE#,OFF#,EMP#,GRADE}<br>
+		EMPLOYEE {EMP#, ENAME,JOB}
+		<ol type="a">
+			<li>Draw a referential diagram for this database and also give the corresponding database definition appropriate set of type and relvar definitions.<b id="right">(10 Marks)</b>
+			</li>
+			<li>Write integrity constraints by using the appropriate language for the above education database.For each of your answers, stat whether the constraint si a type constraint or relvar constraint or database constraint.<b id="right">(10 marks)</b><br>
+				<ol>
+					<li>
+					The only legal GRADE values are 'A', 'B', 'C', 'C', and 'E'.
+					</li>
+					<li>Each teacher must offer at most three courses.</li>
+					<li>Every course offering must have at least 10 enrollments.
+					</li>
+					<li>Every manager must attend 'management course' in 'Yangon'.</li>
+				</ol>
+			</li>
+		</ol>
+
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<li>
+		<ol type="a">
+			<li>Define "discretionary control" and consider given relational schema and write the <b><i>secruity constraint</i>
+			</b> by using appropriate language.<b id="right">(10 Marks))
+		</b>
+		<h3>CUSTOMERS (ID, NAME,AGE,STREET, CITY,AIPCODE, CREDIT)</h3>
+		<ol type="i">
+			<li>User "Smith" can RETRIEVE and INSERT over the entire relvar whose age is greater than 35.
+			</li>
+			<li>User "Ford" has ful provileges (RETRIEVE, UPDATE,INSERT, and DELETE) over the tuples for 'London' customers.
+			</li>
+			<li>User "Joe" can RETRIEVE all attributes and UPDATE the 'CREDIT' amount only for customers whose credit is over 50000.
+			</li>
+			<li>Revove the RETRIEVE and INSERT provilleges of user "Smith" on the customers table.
+			</li>
+		</ol>
+
+         </li>
+         <li>When above security decisions is applied on the relvar 'CUSTOMER', the system automatically modifies the request according to the security decisions. Write <b><i>request modification query</i></b> for following statements.<b id="right">(10 marks)</b><br>
+         	<ol type="i">
+         		<li>User "Ford" requests to retrieve all customers infromation whose 'CREDIT' amount is greater than 300,000.
+         		</li>
+         		<li>User "Joe" requests to updaate all customer's 'CreDIT' by reducing 10% of each credit.
+         		</li>
+         		<li>User "Smith" requests to retrieve all customers who live in "London" city.</li>
+         		<li>User "Smith" requests to retrieve all customers whose 'CREDIT' amount less than 100,000.</li>
+         	</ol>
+         </li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>What are concurrency problems that occurs when two correct transactions concurrently operate with uncontrolled interleave processing?<b id="right">(3 marks)</b>
+			</li>
+			<li>"Locking" is known as concurrency control technique to over the concurrency problems with two kinds of locks; 'X' lock and 'S' lock. State the compatibility matrix and explain data access protocol (locking protocol).<b id="right">
+				( 7 marks)</b>
+			</li>
+			<li>"Locking" can applied over an entire database or an entire or smaller specific tuples or even specific component of a specific tuple, it is called "locking granularity" with intent locks ('IS', 'IX', 'SIX'). State the compatibility matrix and explain each of intent locks menaing.<b id="right">( 10 marks)
+			</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Briefly explain how the system recovers the database when failure occures with sequences oftransactions using chechpoint technique with given figure. Describe how does the system know at restart time which transactions to redo and which to undo?
+				<b id="right">(8-marks)</b>
+			</li>
+			<li>Define the distributed databse. Does the DDBMS have it own data? If not why and how it manages databases at a number of distinct sits? What are advantages and disadvantages of the distributed database? State the fundamental priciples of distributed database system to be able to behave like a non-distributed system.<b id="right">( 12- marks)</b></li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

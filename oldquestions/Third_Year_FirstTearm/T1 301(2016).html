@@ -1,0 +1,312 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+</style>
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Mid Tearm Examination</p>
+<p>Computer Organization(CST-301)</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>State whether the following statements are <b>TRUE</b> or <b>FALSE</b><span id="right">(5 marks)
+			</span><br>
+			<ol type="i">
+				<li>An interpreter first converts the original program into an equivalent one in another language and then runs the new program.
+				</li>
+				<li>The bus arbitration pins are needed to reglate traffic on the bus, in order to privent two devices from trying to use it at the same time.
+				</li>
+				<li>A synchronous bus has a line  driven by a crystal oscillator.</li>
+				<li>ISA-level registrs can be roughtly divided into three categories.</li>
+				<li>Kernel mode is intended to run the operation system and allows all instructions to be executed.</li>
+			</ol>
+		</li>
+		<li>Choose <b>correct</b> or the best alternative in the following.<span id="right">(5 marks)</span><br>
+		<ol type="i">
+			<li>A _____ is a circuit that emits a series of pulses with a presise pulse width and precise interval between consecutive pulses.<br>
+				A.register B.flip-flop C.clock D.latch
+			</li>
+			<li>What characteristic of RAM memory makes it not suitable for permanent________.<br>
+				A.too slow B.unreliable C.it is volatile D.too bulky
+			</li>
+			<li>__________ is a common electrical pathway between multiple devices.<br>
+				A.Wired-OR B.Master Bus C.Bus protocol D.Bus
+			</li>
+			<li>Gates are not manufactured or sold individually bt rather in units called _______ circuits.<br>
+				A.data and control B.address and control C.data and address D.control and data
+			</li>
+
+		</ol>
+	</li><br><br>
+	<li>
+		<b>Match</b> each of items in List-1 (i-v) with the appropiate register in List-2(A-F).<span id="right"><b>
+			(5 marks)</b></span><br>
+			<table>
+				<tr id="line">
+					<th>List-1</th>
+					<th>List-2</th>
+				</tr>
+				<tr>
+					<td>(i)Holds the byte of instruction stream
+					</td>
+					<td>A. Program</td>
+				</tr>
+				<tr>
+					<td>(ii) An area of memory</td>
+					<td>B . MBR</td>
+				</tr>
+				<tr>
+					<td>(iii) A wequence of instructions</td>
+					<td>C. SLI8</td>
+				</tr>
+				<tr>
+					<td>(iv) Shift or rotate the contents of a word</td>
+					<td>D. Stack</td>
+
+				</tr>
+				<tr>
+					<td>(v) Shift the countent left 1 byte
+					</td>
+					<td>F. NOP</td>
+				</tr>
+				
+			</table>
+			
+	</li>
+		</ol>	
+	</li>
+	<li>Define <b>ANY FOUR</b> of the following: 
+		<span id="right">(8 marks)</span><br>
+		<ol type="i">
+			<li>Interrupt Vectors</li>
+			<li>MBR</li>
+			<li>Data Path</li>
+			<li>Addressing</li>
+			<li>Synchronous Bus</li>
+		</ol>
+	</li><br><br><br><br><br>
+	<li>Describe the differences between <b>ANY THREE</b>
+		of the following<span id="right">(12 marks)</span><br>
+		<ol type="i">
+			<li>Translation and Interpretaton</li>
+			<li>Ripple carry adder and Carry Select adder</li>
+			<li>Immediate Addressing and Direct Addressing</li>
+			<li>Master bus and Slave bus</li>
+		</ol>
+
+	</li><br><br><br><br>
+	<li>What is the purpose of the TOS register? HOw MDR, MAR, PC, MBR work in data path.<span id="right">(7 marks)
+	</span>
+</li>
+<li>
+	<ol type="a">
+		
+		<li>(i)Draw the logic diagram for 4 x 3 memory organization.<span id="right">(8 marks)</span><br>
+	
+		(ii)Draw the logic diagram and truth table of 8-input multplexer.<span id="right">(7 marks)</span>
+		</li>
+		<li>(i) The 4 x 3 memory uses 22 AND gates and 3 OR gates.If the circuit were to be expended to 256 x 8, how many of each would be needed? <span id="right">
+			(5 marks)</span><br>
+			(ii) How to organize the 8 M bits memory chips using 1024 x 8 bits to construct n x n martrices method? <span id="right">(6 marks)</span>
+		</li>
+
+		
+	</ol>
+</li>
+<li>
+	(a) Briefly explain the purpose of six ALU control line.
+	<span id="right">(5 marks)</span><br><br>
+	(b) Convert the following Java code to relevant IJVM instructions.<span id="right">(3 marks)</span><br>
+	r2 = r1;<br>
+	r3 = r3 - 1;<br>
+	while r3 < > 0 do<br>
+	{ <br>
+	r2 = r2 + r1;<br>
+	r3 = r3 - 1;<br>
+
+}<br>
+
+(c) Write the detail of MIR to represent the following IJVM instructions: <span id="right">(8 marks)</span>
+<table border="1">
+	<tr>
+		<th>Label</th>
+		<th>Operations</th>
+
+	</tr>
+	<tr>
+		<td>Main 1</td>
+		<td>PC = PC+ 1; go to (MBR)</td>
+	</tr>
+	<tr>
+		<td>isub 1</td>
+		<td>MAR=SP=SP-1; rd</td>
+	</tr>
+	<tr>
+		<td>isub 2</td>
+		<td>H = TOS</td>
+	</tr>
+	<tr>
+		<td>isub 3</td>
+		<td>MDR = TOS = MDR-H wr; goto Main 1</td>
+	</tr>
+	<tr>
+		<td>ior 1</td>
+		<td>MAR=SP=SP-1; rd</td>
+	</tr>
+	<tr>
+		<td>ior 2</td>
+		<td>H = TOS</td>
+	</tr>
+	<tr>
+		<td>ior 3</td>
+		<td>MDR = TOS = MDR-H wr; goto Main 1</td>
+	</tr>
+	<tr>
+		<td>dup 1</td>
+		<td>MAR=SP=SP+1</td>
+	</tr>
+	<tr>
+		<td>dup 2</td>
+		<td>MDR = TOS; wr; go to Main1</td>
+	</tr>
+</table>
+</li>
+<li>
+	<ol type="a">
+		<li>Compare 0-, 1-, 2-, and 3- address machine y writing programs to compute<br>
+			X= (A + B) * (C + D) + E<br>
+			for each of the four machines. The instructions available for use are as follows:
+			<table border="1">
+				<tr>
+					<td>0-Address</td>
+					<td>1-Address</td>
+					<td>2-Address</td>
+					<td>3-Address</td>
+				</tr>
+			
+					<tr>
+						<td>PUSH M</td>
+						<td>LOAD M</td>
+						<td>MOV (X=Y)</td>
+						<td>MOV (X=Y)</td>
+					</tr>
+					<tr>
+						<td>POP M</td>
+						<td>STORE M</td>
+						<td>ADD (X=Y+Y)</td>
+						<td>ADD (X=Y+Z)</td>
+					</tr>
+					<tr>
+						<td>ADD</td>
+						<td>ADD M</td>
+						<td>SUB (X=Y-Y)</td>
+						<td>SUB (X=Y+Z)</td>
+					</tr>
+					<tr>
+						<td>SUB</td>
+						<td>SUB M</td>
+						<td>MUL (X=Y*Y)</td>
+						<td>MUL (X=Y*Z)</td>
+					</tr>
+					<tr>
+						<td>MUL</td>
+						<td>MUL M</td>
+						<td>DIV (X=Y*Y)</td>
+						<td>DIV (X=Y*Z)</td>
+					</tr>
+					<tr>
+						<td>DIV</td>
+						<td>DIV M</td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</table>
+			M is a 16 bits memory address and X,Y,Z are either 16 bit registers. Assuming 8-bit opcodes, and instruction lengths that are multiples of 4-bits, how many bits does each machine need to compute X?
+			<span id="right">(12 marks)</span>
+		</li>
+		<li>Convert the following reverse Polish notation formulas to infix<span id="right">(4 marks)</span>
+			<ol type="i">
+				<li>AB-C + C x</li>
+				<li>AB/CD/ +</li>
+				<li>ABCDE + xx /</li>
+				<li>ABCDE x F/+ G - H/ x+</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+
+
+
+</ol>
+</body>
+</html>

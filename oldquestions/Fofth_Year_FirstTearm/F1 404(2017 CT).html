@@ -1,0 +1,174 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Four Year)</p>
+<p>Computer Organization </p>
+<p>Mid Term Examination</p>
+<p>Computer Architecture(CT-404)</p>
+<p>March, 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>Ripple carry propagation and carry-loocahead are methods of handling carry signals in the combinational adder designs. Illustrate how 4-bit adder of each kind can be extended to compose a 16-bit adder.<b id="right">(10 marks)</b>
+			</li>
+			<li>
+				Compare serial, parallel and carry-lookahead adders in terms of hardware cost adn computational complexity.
+				<b id="right">(6 marks)</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Draw the logic diagram of an appropriate 4-bit ripple-carry adder. Then by using these adders and suitable logic gates, design a complete twos-complement 8-bit adder-subtracter to compute three quantities: X + Y, X - Y, and Y - X as wel as overflow and zero flags. The design goal is to minimize the number of gate used.<b id="right">(8 marks)</b>
+			</li>
+			<li>A cell for array implementation of restoring division is given in Figure 1.(i)Using this divider cell, illustratie a divider array that is designed to handel a word size of n=3 with a double length(6 bit) dividend unsigned integers to generate a 4-bit quotient. (ii)Suppose that diviends are restricted to 3-bits instead of 6, which cells can then be deleted from the array?<b id="right">(8 marks)</b><br>
+
+				<b> <------ Enter Photo-------></b>
+				<table>
+					<tr>
+						<td>α</td>
+						<td>Function</td>
+					</tr>
+					<tr>
+						<td>0</td>
+						<td>uz = x minus y minus t</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>z = x</td>
+					</tr>
+				</table>
+				<b>Figure 1. A cell D for array implementation of restoring division</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Suppose arithmetic-logic instructions can take the generic two-address and three-address forms R2:=<i>f</i>(R1,R2) and 
+				R3:=<i>f</i>(R1,R2). To meet those data access requirements, show how a three-port register file containing four 16-bit registers can support simultaneous reads from rwo ports A and B, whicle writing can take place via a third port C.<b id="right">(8 marks)</b>
+
+			</li>
+			<li>Organization of 2901 4-bit ALU slice is given in Figure 2. If the micro-operations performed by the 2901 as given as in Table 1 determine the microinstruction for <br>
+				(i)R[6]:=R[7] - [R6] (ii)Q:=Q-Q, and (iii)Y:=R[7]
+				<b id="right">(8 marks)</b><br>
+				<b><-----Enter phot -------></b><br>
+				<b>Organization of 2901 4-bit ALU slice</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>
+				<ol type="i">
+					<li>Determine the situation whether or not a particular function or set of functions <i>F</i> should be implemented by a pipelined or nonpielined processor.
+					</li>
+					<li>If a floating point pipeline has five stages whose delays are 120,90,100,80, and 110 <i>ns</i>, respectively, what is the thoughput of this pipeline where the delay of each stage due to its buffer register and associated contral logic is 10 <i>ns?</i><b id="right">(8 marks)</b>
+					</li>
+				</ol>
+			</li>
+			<li>Consider the task of multiplying two n bit fixed point binary numbers X = x<sub>n-1</sub> x<sub>n-2</sub>.......x<sub>1
+			</sub>x<sub>0</sub> and Y = y<sub>n-1</sub>y<sub>n-2</sub>y<sub>x-3</sub>......y<sub>1</sub>y<sub>0</sub> using 1 bit multiply and add cell M of Gigure 3.(i)Design a multiplier pipeline using ripple-carry propagatoin for n=3 and (ii)Deterine the number of  M cell needed and capacity of all the buffer registers.<b id="right">(8 marks)</b><br>
+			<b><----Enter photo------.</b>
+			
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>What are two general approaches to construct a control unit of a processor? Illustrate and analyze th egeneral structur of these control units.<b id="right">(8 marks)</b>
+			</li>
+			<li>
+				The orpanization of an accumulator-based CPU is given in Figure 4. Write down the HDL descriptions for the assembly format instructions: (i)ST X, (ii)MOV AC, DR, (iii)SUB, (iv)NOT, (v)BZ <i>adr</i>.<b id="right">(10 marks)</b>
+			</li>
+			<b><-------Enter photo-------></b>
+		</ol>
+	</li>
+	<li>
+		A mealy-type state transition graph for the state behaviior of accumulator-based CPU is described in Figure 5. To implemnt this finite state machine(FSM) using D flip-flopas with the output <i>D<sub>i</sub></i> of the <i>i<sup>th</sup></i> flip-flop forming the hot variable for state S<sub>i</sub> of S<sub>i</sub><sup>*</sup>. Write down a set of logic equations from htis figure. Also construct a state table for this FSM.<b id="right">(18 marks)</b><br>
+
+		<b>------ Enter photo-----></b>
+	</li>
+</ol>
+</body>
+</html>

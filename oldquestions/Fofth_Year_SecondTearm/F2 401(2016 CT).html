@@ -1,0 +1,241 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table, td, th {
+    text-align: center;
+    border:1px solid black;
+}
+
+table {
+	
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Four Year)</p>
+<p>Computer Organization </p>
+<p>Final Examination</p>
+<p>Database Management System(CT-401)</p>
+<p>September, 2016</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Choose the <i><b>correct answer(s)</b></i> for the following statements:<b id="right">(20-marks)</b>
+		<ol>
+			<li>Given query is converted in to the internal form for further query processing.<br>
+				(A).query graph (B).query tree (C).scanner tree (D).parser tree
+			</li>
+			<li>The query optimization is done by <br>
+				(A).the best human programmer (B).the optimizer program (C).the database administrator (D).none of these
+			</li>
+			<li>In computational expressions, '*' distributed over '+', if and only if__________.<br>
+				(A).(a * b)+ (b*c) = a*(b+c) (B).(a*b) + (a*c) = a*(b+c)
+				(C).(a+b)*(a+b) = b*(a+c) <br>(D).(a+b)*(a+c) = a*(b+c)
+			</li>
+			<li>Database statistics stored data about data for each column of each base table including ___________.<br>
+				(A).number of values (B).number of indexed values (C).second lowest value (D).number of ten values
+			</li>
+			<li>Databse recovery is based on reconstructing the databse from some other information stored, called_________.<br>
+				(A).System recovery (B).Media recovery (C).Transaction recvery (D).Redundancy
+			</li>
+			<li>Isolation in ACID properties means ________.<br>
+				(A).Transaction preserve consistency (B).transaction's update are concealed from all the rest <br>(C).transaction survive from system crash <br>(D).transactions must atomic
+			</li>
+			<li>Checkpoint is used for ________.<br>
+				(A).commit (B).roll back (C).isolation (D).identifying undo and redo list
+			</li>
+			<li>Locking is a_________ for concurrency problem in database.<br>
+				(A).control mechanism (B).transaction recovery (C).isolation mechnism (D).none
+			</li>
+			<li>Two-phase locking mechanism  is one of the solutions for __________.<br>
+				(A).database consistency (B).serializability (C).recovery (D).none
+			</li>
+			<li>Assume transaction A holds a share lock R. If a transaction B also requests for a shared lock on R.<br>
+				(A).it will be granted (B).it will be denied (C).it will result in deadlock situation (D).none of these
+			</li>
+			<li>Prevention of access to the database by unauthorized users is referredd to as:<br>
+				(A).integrity (B).productivity (C).security (D).reliability
+			</li>
+			<li>If transaction A holds an exclusive lock on tuple t, then a request from some distinct transaction B fro a lock of either type on t_________.<br>
+				(A).it will be granted (B).it will be denied (C).it will result in deadlock situation (D).none of these
+			</li>
+			<li>In multi-level secrutiy, individual tuple within one relvar needs to label with__________.<br>
+				(A).privileges (B).constraints (C).classification level (D).none of these
+			</li>
+			<li>A statistical database is a database that permits queries that___________.<br>
+				(A).legal query (B).sub-query (C).nested query (D).aggregated query
+			</li>
+			<li>Data encryption is a solution mechanism to protect against__________.<br>
+				(A).authorized users (B).unauthorized accss (C).physically removing part of the database (D).none
+			</li>
+			<li>Discretionary control, each data object is labeled with a certain classification level and each user is given a certain clearance level.<br>
+				(A).true (B).false
+			</li>
+			<li>Which of the following concurrency control schemes is not based on the serializability property?<br>
+				(A).Twophase locking (B).Graph-based locking (C).Time-stamp based locing (D).None of these
+			</li>
+			<li>The SQL facilities provide for database secrutiy other than authorization is_________.<br>
+				(A).GRANT (B).CONSTRANT (C).AUTHORITY (D).VIEW
+			</li>
+			<li>Referential integrity means that every table should have a unique, primary key, whoe value is NOT NULL.<br>
+				A.true B.false
+			</li>
+			<li>A database constraint is a constraint on an individual relvar.<br>
+				A.ture B.false
+			</li><br>
+		</ol>
+	</li>
+	<li>Write short notes <b>Any FOUR</b> of the followings:<b id="right">(20-marks)</b>
+		<ol type="i">
+			<li>Good optimizer</li>
+			<li>Referential Actions</li>
+			<li>Serializability </li>
+			<li>Deadlock</li>
+			<li>Audit Trails</li>
+			<li>Two-phase locking theorem</li><br>
+		</ol>
+	</li><br><br><br><br><br><br><br><br>
+	<li>Perform the optimization by considering two or more algebraic formulation of I/O's read/write operations for a query "Get names of suppliers who supply part p2" using supplier-aprts-shipments database schema and draw query trree for each query. Assume the database contains 100 suppliers, 10,000 shipments of which only 100 tupes are for part P2 an 50 typles at most can stay in main memory.<b id="right">(15-marks)</b>
+	</li>
+</ol>
+<ol start="4">
+	<li>
+		<ol type="a">
+			<li>Briefly explain how to recover the databasee from the transactions sequence when system failure occurs at tiem (tf) and checkpoint is done at time (tc) shown in the figure. Which transactions can place in redo and nudo lists?
+				<b id="right">(10-marks)</b><br>
+				<b><------Enter photo--------></b>
+			</li><br>
+			<li>The concurrency problem occurs when two transactions access the same database item to perform their operations interleave in a way. That makes the value of some database items incorrect. In this case, y has incorrect value because it has lost hte updated value performaed by Transaction A. What is this problem and how can it be solved? Explain briefly for given case.<b id="right">(10-marks)</b><br>
+				<table>
+					<tr>
+						<th>Transaction A</th>
+						<th>Time</th>
+						<th>Transaction B</th>
+					</tr>
+					<tr>
+						<td>Retrieve y</td>
+						<td>T1</td>
+						<td>-</td>
+
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>T2</td>
+						<td>Retrieve y</td>
+					</tr>
+					<tr>
+						<td>Update y</td>
+						<td>T3</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td>
+						<td>T4</td>
+						<td>Update y</td>
+					</tr>
+				</table>
+			</li><br>
+		</ol>
+	</li>
+	<li>Consider the following relational schema:<br>
+		<b><-----Enter photo-------->
+		</b>
+		<ol type="a">
+			<li>Write the <i><b>SQL statements </b></i> for each of the following condition.<b id="right">(10 Marks)</b>
+				<ol type="i">
+					<li>Write the SQL statements to create the preceding relations, including appropriate versions of all primary and foreign keys integrity constraints. What problems may occur withour primary and foreign key constraints?
+					</li>
+					<li>Set user "Ward" can RETRIEVE privileges over the entire Suppliers table and UPDATE priveleges over sname and address.
+					</li>
+					<li>Set user "John" can RETRIEVE total cost of Parts per supplier, but not individual part.</li>
+					<li>Remove the RETREVE and UPDATE privileges of user "Ward" on Supplier table.
+					</li><br>
+				</ol>
+			</li><br>
+			<li>Write appropriate constraints for each of the following condition. For each of your answers state whether the constraint is a type constraint or relvar constraint or database constraint.<b id="right">(15 marks)</b>
+				<ol>
+					<li>At most one supplier can be located in Athens at any ont time.</li>
+					<li>All red parts must weight less than 50 pounds.</li>
+					<li>No parts can have a cost more than double the average of all parts cost.
+					</li>
+					<li>Every part number in the catalog relvar also exists in the parts relvar.
+					</li>
+					<li>There must exist at least one red part.</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

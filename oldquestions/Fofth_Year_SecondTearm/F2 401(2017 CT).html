@@ -1,0 +1,298 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Four Year)</p>
+<p>Computer Organization </p>
+<p>Final Examination</p>
+<p>Database Management System(CT-401)</p>
+<p>September, 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Choose the correct answer for the following statements.<b id="right">(20 marks)</b>
+		<ol>
+			<li>The integrity constraints: CONSTRAINTS DBC3 SP {P#} = P {P#} is referrred to as <br>
+				(A).type constraint (B).attribute constraint (C).relvar constraint (D).database constraint
+			</li>
+			<li>In the term "ACID", which is the basic foundation that databse transactions are built upon, what does the third character "I" stand for?<br>
+				A.Independence B.Integrity C.Interactivity D.Isolation
+			</li>
+			<li>This portion is used during normal system operation to record details of updates as they are performed and is normally held on disk.<br>
+				A.archive B.active C.tetrieve D.redo
+			</li>
+			<li>Restoring the database to a consistent state by undoing work is called __________ recovery.<br>
+				A.forward B.backward C.transaction D.media
+			</li>
+			<li>A transaction may obtain locks but may not release an lock is known as ___________.<br>
+				A.Shrinking phase B.Growing phase C.Strict phase D.Rigorous
+			</li>
+			<li>A database in which the system automatically keeps track  of all operations performed by users on the regular data.<br>
+				A.request modification B.security subsystem C.audit trails D.authoriztion subsystem.
+			</li>
+			<li>Consider the join of the relation R with relation S. If R has m tuples and S has n tuples, then the maximum size of join is?<br>
+				A.MN &nbsp;&nbsp;B.M + N &nbsp;&nbsp;C.(M +N)/2 &nbsp;&nbsp;
+				D.2(M+N)
+			</li>
+			<li>
+				In public key schema, anyone can convert plain text into cipher text; this schema involves(s).<br>
+				A.one key &nbsp;&nbsp;&nbsp;B.two keys &nbsp;&nbsp;&nbsp;C.three keys &nbsp;<br> D.four keys
+			</li>
+			<li>A statistical database is a database that permits queries that __________.<br>
+				A.legal query &nbsp;&nbsp; B.sub-query &nbsp;&nbsp; C.nested query &nbsp;&nbsp; D.aggregated query
+			</li>
+			<li>A ________ constraint specifies the fegal values for a given relave, and is checked when the relvar in question is updated.<br>
+				A.Type &nbsp;&nbsp; B.Attribute &nbsp;&nbsp; C.Relvar &nbsp;&nbsp; D.Database
+			</li>
+			<li>A "dirty read" happens when one transaction reads a changed record that has not been committed to the databse.(True/False)
+			</li>
+			<li>System failures which affet all transactions currently in progress but do not physically damage the databse.(Ture/False)
+			</li>
+			<li>The higher isolation level, the less interference, the lower islolation level the more interference.(True/False)
+			</li>
+			<li>Concurrency represents both a challenge and an opportunity fr relational systems.(True/False)
+			</li>
+			<li>The pseudo code algorithms for five join techniques burte force, index lookup, hash lookup, merge and hash are considered the costs associated with these techniques.(Ture/False)
+			</li>
+			<li>Referential integrity mena that every table should have a unique, primary key, whose value is NOT NULL.(True/False)
+			</li>
+			<li>Trigger procedure is a procedure that is invoked automatically on the occurrence of some specified event.
+				(True/False)
+			</li>
+			<li>In discretionary control, each data object is labeled with acertain classificaion level, and each user is given a certain clearance level.(True/False)
+			</li>
+			<li>Checkpoints are a part of concurrency measures.(True/False)
+			</li>
+			<li>In mandatory control, each user is given certain clearance level and each object is given certain classification level.
+				(Ture/False)
+			</li><br>
+		</ol>
+	</li><br>
+	<li>Consider the following relational schema:<b id="right">(20 marks)</b><br>
+		STUDENT (RNO,NAME,ADDRESS)<br>
+		COURSE (COURSE-ID,COURSENAME)<br>
+		SUBJECT (SUBJECT-ID,SUBJECT-NAME, DURATION)<br>
+		SMARTK (RNO,SUBJECT-ID, Mark)<br>
+		SCOURSE (RNO, COURSE-ID,YEAR)<br><br>
+		<ol type="a">
+			<li>Write the following <b>integrity constraints</b> by using the appropriate language. For each of your answer, state whether the constraint is a <b>type</b> constraint or <b>relvar</b> constraint of <b>databse</b> constraint<br>
+				<ol type="i">
+					<li>Every student who takes course 'CS4' must take subject 'S1'.
+					</li>
+					<li>Every student must take at least one cource.</li>
+					<li>The average student marks must be greater than 65.
+
+					</li> 
+					<li>At least one student can be located in the same city.</li><br>
+				</ol>
+			</li>
+			<li>Write the following <b>security constraints</b> by the SQL language.
+				<ol type="i">
+					<li>User 1 RETRIVE privileges over the entire student table and UPDATE privileges over the ADDRESS attribute.
+					</li>
+					<li>User 2 can UPDATE privileges over the COURSENAME attribute.
+					</li>
+					<li>User 3 can UPDATE, DELETE privileges over the DURATION attribute.
+					</li>
+					<li>User 2 and User 3 can RETRIEVE and DELETE privileges over the COURSENAME attribute.
+					</li>
+				</ol>
+			
+			</li>
+		</ol>
+
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Perform the optimization by considering two algegraic formation of I/O read/write operations for the query "Get employee name and floor who salary reater than 100K". Assume database contains 100,000 employees, 100 department of which only 10 are salary greate than 100K. Only 100 tuples can stay in main memory.<b id="right">(10 marks)</b><br>
+				EMP (name, age, sal, dno), DEPT (dno, dname, floor, budget, manager)<br>
+				SELECT name, floor<br>
+				FROM EMP, DEPT<br>
+				WHERE EMP.dno = DEPT.dno AND sal > 100K
+			</li><br>
+			<li>Given relation A, B, C and using transofrmatin rules.<b id="right">(10 marks)</b><br>
+				<b>A</b>
+				<table>
+				<tr>
+					<th>S#</th>
+					<th>Sname</th>
+					<th>Status</th>
+					<th>City</th>
+				</tr>
+				<tr>
+					<td>S1</td>
+					<td>Smith</td>
+					<td>20</td>
+					<td>London</td>
+				</tr>
+				<tr>
+					<td>S4</td>
+					<td>Clark</td>
+					<td>20</td>
+					<td>London</td>
+				</tr>
+				</table>
+				<b>B</b>
+				<table>
+					<tr>
+						<th>S#</th>
+						<th>Sname</th>
+						<th>Status</th>
+						<th>City</th>
+					</tr>
+					<tr>
+						<td>S1</td>
+						<td>Smith</td>
+						<td>20</td>
+						<td>London</td>
+
+					</tr>
+					<tr>
+						<td>S2</td>
+						<td>Jones</td>
+						<td>10</td>
+						<td>Paris</td>
+					</tr>
+				</table>
+				<b>C</b>
+				<table>
+					<tr>
+						<th>S#</th>
+						<th>Sname</th>
+						<th>Status</th>
+						<th>City</th>
+					</tr>
+					<tr>
+						<td>S1</td>
+						<td>Smith</td>
+						<td>20</td>
+						<td>London</td>
+					</tr>
+					<tr>
+						<td>S2</td>
+						<td>Blake</td>
+						<td>30</td>
+						<td>Paris</td>
+					</tr>
+				</table><br>
+				Show that:(1)Unicon cistrubutes over intersection<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				(2)Union and intersection are &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commutative and difference is not.
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>
+			(1)Define write -ahead log rule? Why the rule is necessary?<b id="right">(5 marks)</b><br>
+			(2)Global Failre fall into two broad categories.state them.<b id="right">(5 marks)</b>
+			</li>
+			<li>
+				State the two phase commit protocol and discus the implications of a failure on the part of <br>
+				(i)the coordinator 
+				(ii)a participant, during each of the two phase.<b id="right">(10 marks)</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>(1)Define Serializability.<b id="right">(5 marks)</b><br>
+				(2)State two phase locking protocol.<b id="right">(5 marks)
+			</b>
+			</li>
+			<li>One transaction is allowed to retrieve or update on a tuple that has been updated by another transaction but not yet committed by that other transaction. What problem can occur? How can this problem be solved, explain with given example?
+				<b id="right">(10 marks)</b><br>
+				<b><------Enter photo--------></b>
+			</li>
+		</ol>
+	</li>
+
+</ol>
+</body>
+</html>
+
+
+
+
+
+
+
+

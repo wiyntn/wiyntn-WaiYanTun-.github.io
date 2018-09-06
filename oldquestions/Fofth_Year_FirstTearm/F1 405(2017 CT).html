@@ -1,0 +1,172 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+#div
+{
+	 border:1px solid black;
+	 height: 200px;
+	 margin-left: -20px;
+}
+#div ol
+{
+	margin-left: -10px;
+}
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Fourth Year)</p>
+<p>Computer Organization </p>
+<p>Mid Term Examination</p>
+<p>Control System II (CT-405)</p>
+<p>March 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>A tape tecorder has a speed control system so that H(s)=1 with negative feedback, and <br>
+	
+		<table>
+			<tr>
+				<td rowspan="2">G(S)=</td>
+				<td id="line" style="margin-button:-10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="margin-top:-10px">s(s+2) (s<sup>2</sup> + 4s + 5)</td>
+			</tr>
+		</table>
+		Sketch the root locus of the system as K increase.
+		<ol type="i">
+			<li>Find also the value of K at the break-away point</li>
+			<li>Determine the gain when roots lie on the imaginary axis and these roots.
+			</li>
+			<li>Show that the dominant toots are s = _0.35 ± j0.8 when K=6.5. For these dominant roots, calculate the setting time, peak time and overshoot for a unit step input.
+				<b id="right">(20 Marks)</b>
+			</li>
+		</ol>
+	</li>
+	<li>A closed-loop negative unit feedback system is used to control the yaw of the A-6 Intruder attck jet. When the loop transfer function is
+		<br>
+		<table>
+
+			<tr>
+				<td rowspan="2">L(s)= G<sub>c</sub>(s)G(s)=</td>
+				<td id="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			<tr>
+				<td>s(s+3)(s<sup>2</sup> + 2s +2)</td>
+			</tr>
+		</table>
+		<ol type="i">
+			<li>Determine the root locus breakaway point and </li>
+			<li>the value of the roots on the <i>jw</i>-axis and the gain required for those roots.Sketch the root locus.<b id="right">(20 Marks)</b></li>
+		</ol>
+	</li>
+	<li>A tendon-operated robotic hand can be implemented using a pneumatic actruator. The actuator can be represented by<br>
+		<table>
+			<tr>
+				<td rowspan="2">G(s)</td>
+				<td id="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			<tr>
+				<td>(s+70)(s+500)</td>
+			</tr>
+		</table>
+		Plot the frequency response of G(<i>jw</i>). Show that the magnitude of G(<i>jw</i>) is -17dB at ώ = 10. Whow also that the phase is -138.7<sup>.</sup> at ώ = 700. Find the gain and phase margin of this system.<b id="right">(20 Marks)</b>
+	</li>
+	<li>A unity feedbackk system with the loop transfer function
+		<table>
+			<tr>
+				<td rowspan="2">L(s)=G<sub>c</sub>(s)G(s)=</td>
+				<td id="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			</tr>
+			<tr>
+				<td>s(ῑ<sub>1</sub>s+1)(ῑ<sub>2</sub>s+1)</td>
+			</tr>
+
+		</table>
+		where ῑ<sub>1</sub>  0.02 and ῑ<sub>1</sub> = 0.2s.
+		<ol type="i">
+			<li>Select a gain K so that the steady-state error for a ramp input is 10% of the mangitude of the ramp function <i>A</i>,
+				where <i>r(t) = At, t ≥ 0</i> 
+			</li>
+			<li>Plot the Bode plot of G<sub>c</sub>(s)G(s), and determine the phase and gain margins.<b id="right">(20 Mars)</b>
+			</li>
+		</ol>
+	</li>
+	<li>The unit control system has an open-loop transfer function:<br>
+		G(s)=K/s<sup>2</sup>, H(s)=1 Determine the damping ratio, 
+		T<sub>s</sub>, GM and PM for uncompensated system. The <b>lead</b> compensation network is add to get the following specification:<br>
+		<ol type="i">
+			<li>Settling time ≤ 4sec</li>
+			<li>System damping constant ≥ 0.45</li>
+		</ol><br><br>
+		Find the total compensated loop transfer function.Estimate the step response of the system by obtaining the rise time, settling time and damping ratio. Use <b>Bode</b> diagram.<b id="right">(20 marks)</b>
+	</li>
+</ol>
+</body>
+</html>

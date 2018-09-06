@@ -1,0 +1,232 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Final Term Examination</p>
+<p>Assembly Language(CT-306)</p>
+<p>September, 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>
+				<ol type="i">
+					<li>Find the Hex codes for the following instructions, identify the opcodes and operands, and show the order of entering the codes in memory.<br>
+						(i)STA 205H (ii)JMP 2070H (iii)CMA
+					</li>
+					<li>Identify appropriate control signals that are generated at the outpur of 2-to-4 decoder in Figure 1.<br>
+						<----- Enter photo------>
+					</li>
+					<li>List the four operations commonly performed by the MPU.</li>
+				</ol>
+			</li>
+			<li>Two machine codes-0011 1110 (3EH) and 0011 0010 (32H) are stored in memory locations 2000H and 2001H, respectively. The first machine code (3EH) represents the Opcode to load a data
+				byte in the accumulator, and the second code (32H) represents the data byte to be loaded in the accumulator. Illustrate the bus timings as these machine codes are executed. Calculate the time required to execute the Opcode Fetch and the Memory Real cycles and the entire instruction cycle if the clock frequency is 2MHz.<b id="right">(20 Marks)</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<li>
+		<ol type="a">
+			<li>Define the following terms:<br>
+				<ol type="i">
+					<li>Instruction cycle,</li>
+					<li>Machine cyvle and</li>
+					<li>T-state</li>
+				</ol>
+
+			</li><br><br><br>
+			<li>
+				<ol type="i">
+					<li>Write instructions to display <i>H</i> digit at the common-anode seven-segment LED. Which devices are required to implement this operation and illustrate the functions of these devices?
+					</li>
+					<li>What are the control signals necessary in the memory-mapped I/O?? Explain why the number of output ports in the peripheral-mapped I/O is restricted to 256 ports.<b id="right">(20 Marks)</b></li>
+				</ol>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>
+				<ol type="i">
+					<li>Write a program to do the following:
+					<ol>
+						<li>Load the number 30H in register B and 39H in register C.
+						</li>
+						<li>Subtract 39 H from 30H.</li>
+						<li>Display the answer at PORT1.</li>
+					</ol>
+					</li>
+					<li>Load the hexadecimal numbers 9BH and A7H in registers D and E, respectively, and add the numbers. If the sum is grater than FFH, display 01H at outpur PORT0; otherwise, display the sum.
+
+					</li>
+				</ol>
+			</li><br><br><br><br><br><br><br><br><br><br>
+			<li>
+				<ol type="i">
+					<li>Load the data byte A8H in register C. Mask the high-order bits (D<sub>7</sub> - D<sub>4</sub>), and display the low-order bits(D<sub>3</sub> - D<sub>0</sub>) at an output port.
+					</li>
+					<li>Memory location 2030H and 2031H contain 42H and 3FH, respectively, and register pair DE contain 658FH. Write instruction to exchange the conternt of DE with the contents of the memory locations.<b id="right">(20 Marks)</b></li>
+				</ol>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<li>
+		<ol type="a">
+			<li>Write instructions to load the 16-bit number 2050H in the register pair HL using LXI and MVI opcodes, and explain the difference between the two instructions.
+			</li>
+			<li>Write a program and draw a flow chart to count from 0 to 9 with a one-second delay between each count.At the count o f9, the counter chould reset itself to 0 and repeat the sequence continuously. Use register pair HL to setup the delay, and display each count at one of the output ports. Assume the clock frequency of the microcomputer is 1MHz.
+				<b id="right">(20 Marks)</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>The following program ha sa delay subroutine located at location 2060H. Read the program and answer the questions given at the end of the program<br>
+				<table>
+					<tr>
+						<td>2000</td>
+						<td>LXI SP, 20CDH</td>
+						<td>:Main Program</td>
+						<td>2060</td>
+						<td>PUSH H</td>
+						<td>:Delay Subroutine</td>
+					</tr>
+					<tr>
+						<td>2003</td>
+						<td>LXI H,0008H</td>
+						<td></td>
+						<td>2061</td>
+						<td>PUSH H</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2006</td>
+						<td>MVI B,0FH</td>
+						<td></td>
+						<td rowspan="6"><b style="font-size:4em;height:100%">↓</b></td>
+						<td>MVI B, 05H</td>
+
+					</tr>
+					<tr>
+						<td>2008</td>
+						<td>CALL 2060H</td>
+						<td></td>
+						<td>LXI H, COUNT</td>
+					</tr>
+					<tr>
+						<td>200B</td>
+						<td>OUT 01H</td>
+						<td></td>
+						<td><b style="font-size:2em">↓</b></td>
+					</tr>
+					<tr>
+						<td rowspan="2"><b style="font-size:2.5em">↓</b></td>
+						<td>DCR B</td>
+						<td></td>
+						<td>POP B</td>
+					</tr>
+					<tr>
+						<td><b style="font-size:2em">↓</b></td>
+						<td></td>
+						<td>POP H</td>
+
+					</tr>
+					<tr>
+						<td></td>
+						<td>CONTD</td>
+						<td></td>
+						<td>RET</td>
+					</tr>
+				</table><br>
+				<ol type="i">
+					<li>When the execution of the CAll instruction located at 2008H - 200AH is completed, list the contents stored at 20CCH and 20CBH, the contents of the program counter, and the contents of the stack pointer register.
+					</li>
+					<li>
+						List the stack locatios and their contents after the exection of the instructions PUSH H and PUSH B in the subroutine.
+					</li>
+					<li>List the contents of the stack pointer register after the execution of the instruction PUSH B located at 20161H.
+					</li>
+					<li>List hte contents of the stack pointer register after the execution of the instruciotn RET in the subroutine.
+					</li>
+					<li>Write a subroutione to convert an ASCII Hex numer into its binary equivalent. A calling program places the ASCII number in the accmulator, and the sunbroutine should pass the conversion back to the accumulator.<b id="right">(20 Marks)</b>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+
+
+
+#w
+{
+	width: 100px;
+}
+#table1 {
+    border-collapse: collapse;
+}
+
+#table1,#td{
+    border: 1px solid black;
+}
+</style>
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Fianl Examination</p>
+<p>Database Management System(CS-30)</p>
+<p>Septermber 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Write C# statements using ADO.Net for following.
+		<span id="right">(20 marks)</span><br>
+		<ol type="a">
+			<li>Create a Connection object, a DataAdapter Object, a DataSet object. and a DataView object to filter the teachers whose names include "U" and they work in "English" department. And then display selected records in console window by sorting the descending order of salary fekle. Use "Teachers" table with Id, Name, Dept and Salary fields in a SQL database named "UnitDB" in local server.
+			</li>
+			<li>
+				Write a procedure that displays the students' results who passed the exam with RollNo, Name and Result fields in a message box by using the DataAdapter object. Use Students table (RollNo,Name,DoB and Address) and Marks table (RollNo, P1,P2, Total,Result) in stdInfo database in local server.
+			</li>
+			<li>
+				Create a DataTable object and add columns named rno, name and address programmatically.Then create DataRow object as DataTable's new row and fill with the given data and append into the DataTable object.
+				<br>
+				"3CS-1001", "Zaw Zaw", "Yangon"<br>
+				"3CS-1002", "Myo Myo", "Mandalay"<br>
+				And then bind the DataTable to DataGridView named "dgrid". 
+				(Assume that the 'dgrid' is already created.)
+			</li>
+			<li>
+				Create a string variable to store the name of city by using Console.ReadLine() method.Define a connection object to connect the SQFL database "Northwind" in local server.Declare a comand object with a SQL satement to select the information of Customers who live in <b>user desired City.</b>
+				(Use a parameter for user desited city). Define a parameter object and assign the value with the varable for name of city that mentioned above. Ten retrieve the data into a DataReader object and display in console window. Use Customers table with CustId, CustName, CompanyName, and City fields.
+			</li>
+		</ol>
+
+	</li>
+	<li>
+		Create a window form application with follwing form design. At the start of form, Discount Amount and Amount text boxes are not enabled. When user clicks " Calculate Discount" button, calculate the discount amount according to the selected <b>discount rate option</b> and display in Discount Amount text box. Once displays the Discount Amount in text box, calculate the amount and display in text box.<br>
+		Discount Amount = Quenatity * Price <b>*</b> Discount Rate/100<br>
+		Amount = (Quantity <b>*</b> Price) - Discount Amount
+		<br>
+		When user clicks "Save" button, the required information is saved into "SalesItem" table of SalesDB database in local SQL server. SalesItem tabel has ItemId, Itemname, Price, Qty, DiscountAmount and Amount fields. Before saving the record, confirm user with " Are you sure to save?" If user agress, save record into the table. After saving the record, show a message "Save Successful!". When user clicks "Clear" button, clear all text boxes. To close the project user can click "Cloxe " button. Write the code by using command object.<span id="right">(15 Marks)</span>
+
+		<div>
+			<table>
+				<tr>
+					<td id="w">Item Id</td>
+					<td><input type="text" id="w"></td>
+					<td><input type="button" value="Cal Discount" id="w">
+					</td>
+				
+			
+			</tr>
+			<tr>
+				<td>Item Name</td>
+				<td> <input type="text" id="w"></td>
+				<td><input type="button" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" ></td>
+			</tr>
+			<tr>
+				<td>Quantity</td>
+				<td><input type="text" id="w"></td>
+				<td><input type="button" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></td>
+			</tr>
+			<tr>
+				<td>Price</td>
+				<td><input type="text" id="w"></td>
+				<td><input type="button" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></td>
+			</tr>
+
+			<tr>
+				<td>Discount Amount</td>
+				<td><input type="text" id="w"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Amount</td>
+				<td><input type="text" id="w"></td>
+				<td></td>
+			</tr>
+			</table>
+			
+		</div>
+	</li>
+	<li>Create a window form application that a form with a button "Update".When user clicks "Update" button, program update the <b>Balance</b> field of "Stock" table by <b>subtraction (for Issued transaction type) or by addition (for received transaction type) </b> with <b>Qty</b> of "Trans_Stocks" table.(After updation, delete all records from Trans_Stocks table). Two tables are as shown below.Both tales are stored in "StockDB" in local SQL server.Use CommandBuilder object.<span id="right">(15 Marks)</span><br><br>
+		Stock
+		<table id="table1">
+			<tr>
+				<td id="td">ItemId</td>
+				<td id="td">ItemName</td>
+				<td id="td">Price</td>
+				<td id="td">Balance</td>
+			</tr>
+			<tr>
+				<td id="td">1</td>
+				<td id="td">Book</td>
+				<td id="td">250</td>
+				<td id="td">100</td>
+			</tr>
+			<tr>
+				<td id="td">2</td>
+				<td id="td">Pencil</td>
+				<td id="td">100</td>
+				<td id="td">50</td>
+			</tr>
+			<tr>
+				<td id="td">3</td>
+				<td id="td">Ball Pen</td>
+				<td id="td">150</td>
+				<td id="td">20</td>
+			</tr>
+			<tr>
+				<td id="td">4</td>
+				<td id="td">CD</td>
+				<td id="td">150</td>
+				<td id="td">50</td>
+			</tr>
+			<tr>
+				<td id="td">5</td>
+				<td id="td">Eraser</td>
+				<td id="td">100</td>
+				<td id="td">50</td>
+
+			</tr>
+		</table><br>
+		Trans_Stocks
+		<table id="table1">
+			<tr>
+				<td id="td">ItemId</td>
+				<td id="td">Qty</td>
+				<td id="td">Trans_type</td>
+			</tr>
+			<tr>
+				<td id="td">1</td>
+				<td id="td">20</td>
+				<td id="td">Issued</td>
+			</tr>
+			<tr>
+				<td id="td">3</td>
+				<td id="td">10</td>
+				<td id="td">Issued</td>
+			</tr>
+			<tr>
+				<td id="td">4</td>
+				<td id="td">5</td>
+				<td id="td">Issued</td>
+			</tr>
+			<tr>
+				<td id="td">1</td>
+				<td id="td">10</td>
+				<td id="td">Received</td>
+			</tr>
+			<tr>
+				<td id="td">5</td>
+				<td id="td">5</td>
+				<td id="td">Issued</td>
+			</tr>
+			<tr>
+				<td id="td">3</td>
+				<td id="td">10</td>
+				<td id="td">Received</td>
+			</tr>
+		</table>
+
+	</li>
+	<li>
+		Write short notes on <b id="line">ANY FIVE</b> of the following:<span id="right">(15 marks)</span><br>
+		<ol type="a">
+			<li>Marketing</li>
+			<li>Point of Sale(POS) system</li>
+			<li>Target Market</li>
+			<li>Manufacturing System</li>
+			<li>Economic Order Quantity (EOQ)system</li>
+			<li>Job specification</li>
+			<li>Benefit plans</li>
+		</ol>
+	</li><br><br><br><br><br><br><br>
+	<li>
+		(a)Describe the term <b>market skimming pricing.</b><span id="right">(3 marks)</span><br><br>
+		(b)Explain the <b>marketing Philsophy.</b><span id="right">(9 marks)</span>
+	</li>
+	<li>(a)Define the term <b>production systems.</b><span id="right">(3 marks)</span><br><br>
+		(b)Why is it important to have quality control information systems in manufacturing and production sectors?<span id="right">(9 marks)</span>
+	</li> 
+	<li>(a)Define the terms <b>"A Job"</b> and <b>"A Position".</b><span id="right">(3 marks)</span><br><br>
+		(b)Explain <b>human resource management functions.</b><span id="right">(8 marks)</span>
+	</li>
+</ol>
+<b style="text-align:center">****************************************</b>
+</body>
+</html>

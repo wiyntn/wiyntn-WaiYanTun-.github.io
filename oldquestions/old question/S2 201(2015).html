@@ -1,0 +1,266 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left1,.left1
+{
+	float: left;
+}
+#right1,.right1
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol,ul
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+#ma
+{
+	margin-left: -40px;
+}
+
+</style>
+
+</head>
+<body>
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Second Year)</p>
+<p>Computer Organization (CST-201)</p>
+<p>Final Examination</p>
+<p>Sepember, 2015</p>
+<p>Zone III</p>
+
+<p id="left1">Answer ALL Questions</p>
+<p id="right1">Time allowed 3hours.</p>
+
+<hr>
+<ol>
+	<li>
+		<ol type="a">
+			<li>In the following Applet, detect the line numbers of errors stantements and rewrite them into correct statments: (No need to rewrite the whole program.)<b id="right">(10 Marks)</b><br>
+				
+				<div style="border:1px solid black;">
+					1.import java.applet.*;<br>
+					2.import java.awt.*;<br>
+					3.import java.awt.event.*;<br>
+					4.public class FactorialApplet extends Applet implements KeyListener {<br>
+					5.Label lbl2 = new Label("Enter a positive integer and press ENTER");<br>
+					6.TextField txt1 = new TextField(10);<br>
+					7.Label labl2= new JLabel("The Factorial is");<br>
+					8.TextField txt2 = new TextField(10);<br>
+					9.public init(){<br>
+					10.add(lbl1);<br>
+					11.add(txt1);<br>
+					12.txt1.addActionListener(this);<br>
+					13.add(lbl2);<br>
+					14.add(txt2);<br>
+				    15.}<br>
+				    16.public void actionPerformed(ActionEvent e){<br>
+				    17.String s=txt1.getText();<br>
+				    18.int n=0, f=1;<br>
+				    19.if(!s.equals("")){<br>
+				    20.n=Double.<i>parseInt(s);</i><br>
+				    21.for(int i=n; i>; i--)<br>
+				    22.f*=i;<br>
+				    23.txt2.setText(f);<br>
+				    24.}<br>
+				    25.}<br>
+				    26.}<br>
+
+				
+				</div>
+			</li>
+			<li>
+				(i)Suppose you have a database table named "User" including two coluns: username and password. Now you are writing user DELET action. Complete the method below: <b id="right">(5 marks)</b><br>
+				<div style="border:1px solid balck;">
+					void doDelete (String username,String password)<br>
+					{<br>
+					//the database is already connected via the object, conn.<br>
+					//delete the given username and password from the table.<br>
+
+
+				}
+
+				</div><br>
+				(ii)Complete the following threaded program:<b id="right">(5 marks)</b><br>
+				<div style="border:1px solid black">
+					class NumberThread implements____(1)______{<br>
+					public void ___(2)_____ //thread body<br>
+					{<br>
+					try{<br>
+					for(int i=1; I<100; i++){<br>
+					System.out.println(i);<br>
+					Thread. _____(3)_____(1000);//wait till 1000 miliseconds<br>
+				}<br>
+				}catch (interruptedException e) {e.printStackTrace();}<br>
+
+				}<br>
+				pulic static void main(String[] args){<br>
+				NumberThreaad nt= new NumberThread();<br>
+				Thread t= ______(4)_____;<br>
+				t._______(5)____;//call the thread<br>
+			}
+				}
+				</div>
+			</li>
+
+		</ol>
+	</li>
+
+</ol>
+<ol start="2">
+	<li>
+		<ol type="a">
+			<li>Answer the following question;<b id="right">(5 marks)</b>
+				<ol type="i">
+					<li>Which method is used to despose the JFrame on close?<br>
+						(a)dispose() (b)setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE) (d)setDefaultCloseOperation (JFrame.DISPOSE_ON_CLOSE) (d)none
+					</li>
+					<li>The default layout manager of JFrame is_________.<br>
+						(a)FlowLayout (b)BorderLayout (c)GridLayout (d)BoxLayout
+					</li>
+					<li>JLabel can show both bext and image at the same time.<br>
+						(a)true (b)false
+					</li>
+					<li>Which of the following component is the combination of text field and drop down list?<br>
+						(a)JCheckBox (b)JComboBox (c)JList (d)JScrollPane
+					</li>
+					<li>The display character of JPasswordField can be changed by using _________.<br>
+						(a)setCharacter(char) (b)setEchoCharacter(char) (c)setEchoChar(char)
+					</li>
+				</ol>
+			</li>
+			<li>
+		Create the following GUI for Game Collection system, <b>GameEntry.java</b> as follows:<b id="right">(15 marks)</b><br>
+		<---Enter Photo----><br>
+		The system should have the following components and requirements:<br>
+		<ul>
+			<li>Five JLabel, <i>lblName, lblRate, lblContent, lblOwner, lblype to hold </i>"Name", "Rating", "Contents", "Owner" and "Type".
+			</li>
+			<li>Two JTextField, <i>txtName and txtOwner</i> to get the name of Game and Owner.</li>
+			<li>Four JRadioButton, <i>rdoChildhood, rdoEveryone, rdoTeen, and rdoMature</i> to hold "Childhood", "Everyone", "Teen" and "Mature".
+			</li>
+			<li>Five JCheckBox, <i>chkCartoon, chkFantasy, chkFantasy, chkViolence, chkGambling, chkBlood to hold </i> "Cartoons", "Fantasy", "Violence", "Gambling", and "Blood".
+			</li>
+			<li>One JComoboBox, cboType, to hold "Action", "Shooter", "Advaenture", "Strategy".</li>
+			<li>The two JButton and four JRadioButton components are registered to ActionListener to get ActionEvent.</li>
+			<li>However, there is no definition in <i>actionPerformed</i> method yet.	
+		     </li>
+		     <li>All the checkboxes should be locked to prevent user interaction.</li> 
+		</ul>
+	</li>
+	</ol>
+	</li>
+	
+</ol>
+<ol start="3">
+	<li>
+		<ol type="a">
+			<li>Answer the following questions:<b id="right">(5 marks)</b>
+				<ol type="i">
+					<li>The method to show the save dialog box using JFileChooser object, <i>chooser,</i> is _________.<br>
+						(a)chooser.show() (b)chooser.showSaveDiialog(Component) (c)chooser.showSaveDialog()
+					</li>
+					<li>The ActionLIstener interface can be registered by a JList object.<br>
+					(a)true (b)false 
+		             </li>
+		             <li>Sevveral types of swing buttons are subclasses of __________.<br>
+		             	(a)JButton (b)ToggleButton (c)AbstractButton
+		             </li>
+		             <li>An abstract method of the <i>ActionListener</i> interface is _________.<br>
+		             	(a)public static void actionPerformed(Event e) (b)public void action(ActionEvent e) (c)public static void static void action(Event e) (d)public void actionPerformed(ActionEvnet e)
+		             </li>
+		             <li>The JColorChooser class provides the user with several ways of choosing colors.<br>
+		             	(a)ture (b)false
+		             </li>
+				</ol>
+			</li>
+			<li>Implement the <i>actionPerformed</i> method of your class, <b>GameEntry.java,</b> in question 2.(b) as follows:<b id="right">(15 marks)</b>
+				<ul>
+					<li>When the <i>"rdoChildhood"</i> radio button is clicked, only a content, "Cartoons" should be checked automatically by the system.
+					</li>
+					<li>When the "rdoEveryone" radio button is clicked, both the contents, <i>"Cargtonns"</i> and <i>"Fantasy"</i>, should be checked automatically by the system.
+					</li>
+					<li>When the "rdoTeen" radio buton is clicked, the contents, "Cartoons", "Fantasy", "Violence" and "Gambling" should be checked automatically by the system.
+					</li>
+					<li>When the "rdoMature" radio button is clikced, all contents should be checked automatically by the system.
+					</li>
+					<li>When the <i>"btnSave" </i>button is clicked, the system will collect the user entered data into the String, name, rate, contents (contents are separated by ','), <i>owner, type.</i>
+					 Then a method <b>saveGame</b> (name, rate, contents, owner, type) is called. (This method will be be define in later question.)</li>
+					 <li>When the <i>"brnCancel"</i> button is clicked, the frame will be disposed.</li>
+				</ul>
+			</li>
+		</ol>
+	</li>
+</ol>
+<ol start="4">
+	<li>Develop a menu-driven Java application, <b>Game Collection System, as follows:</b><b id="right">(20 Marks)</b>
+		<ul>
+			<li>One JMenu object, <i>menuGame.</i></li>
+			<li>Two JMenuItem object, <i>itemAdd and itemSearch</i> for Game menu.<br>
+				As Shown in the diagrams,
+				<ul>
+					<li>When the user selects <b>Add</b>, the system just calls <b>GameEntry.java</b> in question 2.(b) to input game information.
+					</li>
+					<li>When the user choose <b>Search,</b> the systme calls <b>GameSEarch.java</b> as above.</li>
+				</ul>
+			</li><br><br>
+			<b><---Enter photo-----.</b><br>
+			<br>
+			<li>The<b> GameSearch.java</b> class will include the following components:
+				<ul>
+					<li>One JLabel,<i>lblName.</i></li>
+					<li>One JTextField,<i>txtName,</i> to input game name to search.</li>
+					<li>One JButton,<i>btnSearch.</i></li>
+					<li>One JTextARea,<i>taGame,</i> to show information of requested game.</li>
+					<li>The <i>btnSearch</i> component is registered to ActionListener, but no definition in <i>actionPerformed</i> methos is written yet.</li><br>
+				</ul>
+			</li>
+		</ul>
+	</li><br><br>
+	<li>Complete the <b>Game Collection System</b> in question 4 as follows:<b id="right">(20 marks)</b><br>
+		&nbsp;&nbsp;Our system is decided to save the game information in Database and show the requested game from this database also. So, we need to nodify the classes <b>GameEntry.java</b> and <b>GameSEarch.java</b>. The system will use the table, <b>GameTable</b>, with the structure below in database GameDB.
+		<table border="1" width='50%'>
+			<tr>
+				<th>GameTable</th>
+			</tr>
+			<tr>
+				<td>-Name<br>-Rate<br>-Concept<br>-Owner<br>-Type</td>
+			</tr>
+		</table><br>
+		Accorceing to this decision, you are getting to code the following methods:
+		<ol type="i">
+			<li><b>public void LoadDriver() </b>to load the Jdbc-Odbc-bridge driver.</li>
+			<li><b>public void getConnection()</b> to get the connection with the database. The data source name is "game".</li>
+			<li>Write the <b>public void saveGame(String name, String rate, String contect, String owner, String  type)</b> method of class <b>GameEntry.java</b> to save the user input to the GameTable. (No need to rewrite the whole class.)
+			</li>
+			<li>Rewrite the <b>public void actionPerformed(ActionEvent event)</b> method of class <b>GameSearch.java</b> to retriveve the requested hotel from the GameTable.(No need to rewrite the whole class.)
+			</li>
+			<li><b>public void closeConnection()</b> to close the connection with database.</li>
+		</ol>
+	</li>
+</ol>
+
+</body>
+</html>

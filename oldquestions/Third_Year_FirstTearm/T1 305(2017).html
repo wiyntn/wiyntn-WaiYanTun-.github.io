@@ -1,0 +1,364 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+#width td
+{
+	width: 50%;
+}
+</style>
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Mid Tearm Examination</p>
+<p>Computer Application Technique III (CS-305)</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<div>
+	<ol><li>Write C# statement for following.<span id="right">(20 marks)</span></li>
+		<ol type="a">
+			<li>Create a sortedlist collection object with given data display all <b>keys</b> and all <b>pairs of them in</b> console window.<br>perls : 3<br>dot : 1
+				<br>net:2
+			</li>
+			<li>Create a two dimensional array with 2 rows and columns. This stores the given strings ("Rose", "Jasmine", "Lily", "Carnation") and displays all on console window.</li>
+			<li>Define a delegate type that represents reference to a method with two integr parameters and returns integer type. when instanitiates this delegate, associate its instance with statement lambda method. This lambda method takes two parameters and checks all parameters are greater than 0 returns the multiplication of two parameter. Otherwise returns o. Invoke the method through the delegate instance and display thee result.</li>
+			<li>Define a class named "Exercise" thaat includes a method named "Show" that takes two generic type parameters with different types. This method shows the two variables in console window.In the main method,defines an instance of "Exercise" class.(i) Create two variables (an integer and a string) with suitable values. INvoke the Show method of object with these variables. (ii) Invoke the Show method with two integer numers.</li>
+
+		</ol>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<li>
+			<ol type="a">
+				<li>Create a console application project with following:<br>
+					Define a class named "Child" with two member variables (Age and Name) by using auto-implemented property. In the main method, create a Dictionary collection of <string,Child> named "moreChilds" property and fill with 2 pairs of Name and Child object. And theen displays Name and Age of each object in collectios.<span id="right">
+					(5 marks)</span>
+				</li>
+				<li>Create a console application project with following:<span id="right">(10 Marks)</span><br>
+					Define an interface named "ICalculate" with a method: calculate() which has no parameters and no return value.Define another interface named "IDisplay()" with a method "Display()" which has no parameters and no return value.<br>
+					Define a class named "salePerson" that implements above two interfaces. It includes provate data members (name, sales_amount, salary, bonus and incme), calculate() method and Display() method. To access provate data members from outside of class, create properties of get and set accessors.<br>
+					The calculate() is a virtual method that calculates the bonus and income and assign to data members.If the amount is greater than or equal 5000, (bouns = amount * 0.25). Oterwise, (bonus = amount * 0.15). It also calculates the income (income = salary + bonus).<br>
+					The Display() method display the value of all members.<br>
+					In the main method, vreate an instance of class with suitable data and display information of instance.
+
+				</li>
+			</ol>
+
+		</li>
+		<li>Create a console application project with following:<span id="right">(15 marks)</span><br>
+			Define a class named "Student" with 3 data memers (Rno, Name and Major). All members will be defined using auto-implementeed propeerty. Create a List collection object with 3 instances of Student class with suitable data.(Eg: Rno=1, Name="Mg Mg" Major="CS")<br>
+			Define another class named "BookRental" with 4 data members (Rno, BookID, Title and Subject).All members will be defined using auto-implemented property.Create a List collection object with 5 instances of BookRental class with suitable data.(EgRno=1, BookID=1, Title="C#" 5.0 Programmer Reference", Subject="Programming")<br>
+			Inn the main method,<br>
+			<ol type="i">
+				<li>Create a LINQ query that retrieves the students' information according to the group of major type and ascending order of major. And them displays this information in console window.</li>
+				<li>Creaate anothe LINQ query that retrieves the students' information according to the group of subject type and ascending order of book ID. And then displays thsi information in console window.</li>
+				<li>Create anothe LINQ query that retieves the students' info with their books'rental group and then displays in console window as shown below.
+					<table>
+						<tr>
+							<td>Roll NO :1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Book ID:1</td>
+							<td>Title: C# 5.0 Programmer Reference</td>
+							<td>Subject:Programming</td>
+						</tr>
+						<tr>
+							<td>Book ID:2</td>
+							<td>Title: E-business</td>
+							<td>Subject:Business</td>
+						</tr>
+					</table>
+				</li>
+			</ol>
+		</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<li>
+			<ol type="a">
+				<li>Draw up the Cash Budget for the months from January to April using the following information;
+					<ol type="i">
+						<li><b>Production (by unit) in 2016</b>
+						</li>
+						<table>
+							<tr>
+								<td>Jan</td>
+								<td>Feb</td>
+								<td>Mar</td>
+								<td>Apr</td>
+								<td>May</td>
+								<td>Jun</td>
+							</tr>
+							<tr>
+								<td>120</td>
+								<td>100</td>
+								<td>100</td>
+								<td>110</td>
+								<td>120</td>
+								<td>100</td>
+							</tr>
+						</table>
+						<li>Raw materials costs are $ 5 per unit. Materials are paid for one month before being used in production.
+						</li>
+						<li>
+							Direct labour is paid at $ 4 per hour. Each unit requires 1.5 hours of labour. Paid in the same months as unit produced
+						</li>
+						<li>Sales: at $ 20 per unit: 10% of sales are for cash and the remainder are on credit : debtors pay in two months after sales;<br>
+							<b>Sales (by unit);</b>
+							<table>
+								<tr>
+									<td>2015</td>
+									<td></td>
+									<td>2016</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Nov</td>
+									<td>Dec</td>
+									<td>Jan</td>
+									<td>Feb</td>
+									<td>Mar</td>
+									<td>Apr</td>
+								</tr>
+								<tr>
+									<td>90</td>
+									<td>100</td>
+									<td>120</td>
+									<td>100</td>
+									<td>90</td>
+									<td>120</td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							The prduct is manufactured under licence and a fee of $ 1 is payable for every unit sold.This fee is paid in the month of sales.
+						</li>
+						<li>
+							Fixed expenses of $ 1200 per year, payable in quarterly installments starting in January.
+						</li>
+						<li><b>A sales of some extra equipment
+						</b> will take place in March and is expected $ 2000.<span id="right">(10 marks)</span></li>
+					</ol>
+				</li>
+				<li>
+					A firm has estimated that it will be able to sell 10,000 units in the coming year.The selling price per unit has been seet at $12.<br>
+					Materials will cost $ 3 per unit and labour $ 2.50 per unit. The firm has identified Direct Expenses of $ 1.50 per unit and also perdicts Fixed Overheads of $ 4,000 for the year.<br>
+					At the end of the year the actual result are as follows;
+					<br>
+					<table>
+						<tr>
+							<td>Sales (11500 units)</td>
+							<td>$</td>
+							<td>135,500</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>$</td>
+							<td>38,500</td>
+						</tr>
+						<tr>
+							<td>Labour</td>
+							<td>$</td>
+							<td>26,500</td>
+						</tr>
+						<tr>
+							<td>Direct Expense</td>
+							<td>$</td>
+							<td>17,900</td>
+						</tr>
+						<tr>
+							<td>Fixed Overheads</td>
+							<td>$</td>
+							<td>4,100</td>
+						</tr>
+					</table>
+					Draw up the budgeted profit and loss account for the year, a flexible budget for the actual sales level and indetiey the variances.<span id="right">(10 marks)</span>
+				</li>
+			</ol>
+
+		</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<li>
+			<ol type="a">
+				<li>Golden World construction intends to replce one of its machie.The final decision will be based entirely on financial grounds. Details are given below of the alternabive replacement machine being considered.
+					<p>
+					<table>
+						<tr>
+							<th><b>Machine</b></th>
+							<th><b>A</b></th>
+							<th><b>B</b></th>
+						</tr>
+						<tr>
+							<td>cost of capital</td>
+							<td>250,000</td>
+							<td>200,000</td>
+						</tr>
+						<tr>
+							<td>Cash inflow per year</td>
+							<td>($,000)</td>
+							<td>($,000)</td>
+						</tr>
+						<tr>
+							<td>Year 1</td>
+							<td>60</td>
+							<td>75</td>
+						</tr>
+						<tr>
+							<td> &nbsp;&nbsp;  &nbsp;&nbsp; 2</td>
+							<td>120</td>
+							<td>75</td>
+						</tr>
+						<tr>
+							<td> &nbsp;&nbsp;  &nbsp;&nbsp; 3</td>
+							<td>100</td>
+							<td>65</td>
+						</tr>
+						<tr>
+							<td> &nbsp;&nbsp;  &nbsp;&nbsp; 4</td>
+							<td>60</td>
+							<td>65</td>
+						</tr>
+						<tr>
+							<td> &nbsp;&nbsp;  &nbsp;&nbsp; 5</td>
+							<td>40</td>
+							<td>65</td>
+						</tr>
+						<tr>
+							<td>Residual value at life</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Year 5</td>
+							<td>30</td>
+							<td>--</td>
+						</tr>
+					</table>
+					</p>
+					It is also <b>additional expenses</b> to machine B for extension system $10,000 for year1 and year 2, at beginning of the project.<br>
+					It si intended to choose only one of the machies and to finance 1/3 of all capital with loan and 2/3 with equity. Assume also the cost of finacncing with Loan 14% and 15% of equity.<br>
+					<b>Required:</b>
+					<ol type="a">
+						<li>The weighted average cost of capital.</li>
+						<li>NPV for each machine. Which machine should be accepted or rejected, why?
+						</li>
+						<li>Calculate the Pay-back period for accepted machine.<span id="right">(20 marks)</span></li>
+					</ol><br>
+					<b>Notes:</b><br>
+					Present value of an ordinary annuity of $ 1 is :
+					<table id="width">
+						<tr>
+							<td id="line">PV=1/r* (1-1/(1+r)<sup>n</sup>)</td>
+							<td id="line">PV = 1/(1 + r)<sup>n</sup></td>
+						</tr>
+						<tr>
+							<td><b>Year &nbsp;10% &nbsp;15% &nbsp; 20%</b></td>
+							<td><b>Year &nbsp;10% &nbsp;15% &nbsp; 20%</b></td>
+						</tr>
+						<tr>
+							<td>1 &nbsp;0.909 &nbsp;0.870 &nbsp;0.833 </td>
+							<td>1 &nbsp;0.909 &nbsp;0.870 &nbsp;0.833 </td>
+							
+                        </tr>
+                        <tr>
+							<td>2 &nbsp;1.736 &nbsp;1.626 &nbsp;1.528 </td>
+							<td>2 &nbsp;0.826 &nbsp;0.756 &nbsp;0.694 </td>
+							
+                        </tr>
+                        <tr>
+							<td>3 &nbsp;2.487 &nbsp;2.283 &nbsp;2.106 </td>
+							<td>3 &nbsp;0.751 &nbsp;0.658 &nbsp;0.579 </td>
+							
+                        </tr>
+                        <tr>
+							<td>4 &nbsp;3.170 &nbsp;2.855 &nbsp;2.589 </td>
+							<td>4 &nbsp;0.683 &nbsp;0.572 &nbsp;0.482 </td>
+							
+                        </tr>
+                        <tr>
+							<td>5 &nbsp;3.791 &nbsp;3.352 &nbsp;2.991 </td>
+							<td>5 &nbsp;0.621 &nbsp;0.497 &nbsp;0.402 </td>
+							
+                        </tr>
+					</table>
+				
+
+				</li>
+				<li>Write <span id="line"> short notes</span>
+					on the followings:<span id="right">
+					(10 marks)</span><br>
+					(i) The Present Value (ii)The Net Present Value (iii)The Internal Rate of Return
+					(iv) The Payback
+
+				</li>
+
+			</ol>
+
+		</li>
+	</ol>
+</div>
+</body>
+</html>

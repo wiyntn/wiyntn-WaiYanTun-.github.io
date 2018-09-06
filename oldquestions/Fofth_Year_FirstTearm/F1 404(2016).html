@@ -1,0 +1,173 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Fourth Year)</p>
+<p>Computer Organization </p>
+<p>Mid Term Examination</p>
+<p>Database Management System(CS-404)</p>
+<p>March 2016</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>Write equivalent an algebra expression using expression transformation rules on the supplier-parts-projects database for the following algebra expressiions.<span id="right">(10 marks)</span><br>
+				<ol type="i">
+					<li>
+						(S {CITY} MINUS J {CITY}) MINUS (P{CITY} MINUS J{CITY})
+					</li>
+					<li>
+						(P WHERE CITY ='London') JOIN (J JOIN S)
+					</li>
+					<li>((SP WHERE P#='P2') JOIN S{S#, SNAME} ) {SNAME}
+					</li>
+					<li>(S WHERE CITY ='London') WHERE STATUS > 10</li>
+					<li>(P WHERE COLOR = 'Red' ) {P#}</li>
+
+				</ol>
+			</li>
+			<li>A divide and conquer strategy is one of the optimization strategies that can be executed in parallel on different processors. Such strategy is used in query decompositiion method using detachment and tuple substitution. Decompose the following query "Get names of Paris supplers who supply some parts weight less than 25 pounds" using such strategy and draw decomposition tree fot the query.<span id="right">(15 marks)
+			</span>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li> For data security, modern DBMSs typically support two broad approaches to protect the unit of data or "data object" that can range from an entire database to a specific tuple. Define these two approaches and how these approaches differ.<span id="right">(8 marks)</span>
+			</li>
+			<li>
+				SQL standard supports for discrtionary access control for data protection, write SQL autorization statements on the following view of supplier-parts-projects database:<span id="right">(8 marks)</span><br>
+				<b>CREATE VIEW LS AS<br>
+					SELECT S.S#, S.SNAME, S.STATUS, S.CITY<br>
+					FROM S<br>
+					WHERE S.CITY = 'London';
+				</b><br>
+				<ol type="i">
+					<li>Users "Dan" and "Misha" RETRIEVE priveleges over the entire view and UPDATE privileges over the SNAME and STATUS  attributes only DELETE over tuples view.
+					</li>
+					<li>User "John" RETRIEVE and UPDATE priveleges over the entire view
+					</li>
+					<li>Remove the UPDATE and DELETE priveleges of users "Dan" and "Misha" on the view, LS.
+					</li>
+					<li>Suppose user "John" privileges are granted by user "Dan", when UPDATE privilege is removed from user "DAan", "John" UPDAATE privilege will lead to abandoned priveleges.Write remove UPDATE and DELETE privileges statement of user "Dan" tp causes abandoned privileges to be revoved as well.</li>
+				</ol>
+			</li>
+			<li>
+				Work through the RSA public key encryption scheme with p=3, q=5 and e=11 for plaintext <b>ROSE</b> (Use A= 01,.....Z=26)<span id="right">(9 marks)</span>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Ideally, integrity rules should be considred in the design phase of the database for data correctness or accuracy. Define four board cateegories of integrity constraints with examples.
+				<span id="right">(10 marks)</span>
+			</li>
+			<li>
+				What is "Prferential integrity"? Consider the following relational schems:<span id="right">(15 marsk)</span><br>
+				<span>
+				<b>Table Name  Attributes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+				<hr>
+				Emp (<b id="line">eid</b>:integer, ename: string, age:integer, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;salary;real)<br>
+				Works (<b id="line">eid:</b>:integer,<b id="line">did:</b>    integer, pcttime:integer)<br>
+				Dept &nbsp; (<b id="line">did:</b> integer, daname: string, budget: real, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; managerid:integer)
+
+				</span>
+				<ol type="i">
+					<li>Write the SQL statements to create the preceding relations, including appropriate versions of all primary and foreign keys integrity constraints.
+					</li>
+					<li>Write an SQL statement to delete the Toy department.If the referential integrity constraint is ON DELETE CASCADE  rule for this schema, explain what happens when this statement is executed.
+					</li>
+					<li>If the referential integrity constraint for eid in Works table is ON DELETE NO ACTION rule for this schema, explain what happens when an employee is deleted in the Emp table.
+					</li>
+					<li>What problems may occure if primary keys constraints are not used for this schema?
+					</li>
+					<li>What problems may occur without foreign key constraints?
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Define a distibuted database system. What are its davantages and disadvantages? Define the fundamental principle of distibuted database.<span id="right">(10 marks)</span>
+			</li>
+			<li>
+				The objective of the distibuted database systm is to minimize network utilization. This objective in turn gives rise to the problems in number of distributed database processing.Define those areas and explain how DDBMS manages to achieve two of those problesms.<span id="right">(15 marks)</span>
+				<h3 align="center">(OK)</h3>
+				One of the objectives of DDBMS is DBMS indepeneence. Briefly discussion on this objective that what DDBMS concepts are applicabe for homogeneity and heterogeneity DBMSs.<span id="right">(15 marks)</span>
+			</li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

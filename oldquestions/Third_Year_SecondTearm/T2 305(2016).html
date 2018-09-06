@@ -1,0 +1,177 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+</style>
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Final Examination</p>
+<p>Computer Application Techniques III(CS-305)</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Write C# statements using ADO.Net for the following.
+		<span id="right">(20 marks)</span><br>
+		<ol type="a">
+			<li>Create a Connection object, a DataAdapter object, a DataSet object, and a DataView object to filter the staff whose names start with "U" and they aren't worked in "Admin" department.And then display selected records in console window by sorting the descending order of salary field.Use "staff" table with Id, Name, Dept and Salary fields in "StaffDB" SQL server database in Local server.
+			</li>
+			<li>Real all rows of DataReader object named 'rdr' and add into Datagridview named 'datagriviewl'. DataReader 'rdr' has ContactName, CompanyName and City columns.
+			</li>
+			<li>Create a Connection object and command object to extract the students' information who passed in exam.Use Marks tables in SQL server database named 'StudentDb' in local server. Marks table has rno,p1,p2, total and result fields. And then display the result in a message box.
+			</li>
+			<li>
+				Add Data Providernamespace for working with a MS Access database.Declare a connection string pointion to a database "StaffDatabase.mdb" <b>in D:\Database
+			</b> folder. Create a Connection object and pass the above connection string.Call the connection object's open method.Create a Data Adapter object and a Dataset object to extract staffs' information whose names start with "Daw" from "staff" table.Use staff table with staffID, Name, Rank and Salary field.
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Create a window form application which has a button named "Update".When user clicks this button, update the <b>salary, tax</b> and <b>netpay</b> fields of all records in <b>bable of CataSet.(Update salary by addition)</b> of "20000" kyats, tax = 2% of new salary and net pay = new salary- tax.)After that dispaly <b>the updated records </b> in a message box and updates the table in <b>Data Source.</b> Use "PayBill" table with Id, Name, salary, tax and netpay in "StaffDB" of local SQL Server.Use DataAdapter, DataSet, DataTable and Command Builder objects.
+			</li>
+			<li>Create a window form application with following form design. In the Form Load event method, the departments' names ("Admin", "Human Resource", "Sales", and "Productions") added into <b>combo box</b>. When user clicks "Show" button, the desired staffs' information according to user selected in combo box will display in DataGridView control.Use "Staff" table with Id,Name, Rank, Dept and Salary fields in "StaffDB" database in local server database.<span id="right">
+				(7 marks)</span><br>
+				<div style="border:1px solid black">
+					Choose Department
+					<select>
+						<option>Human Resource</option>
+					</select>
+					<input type="submit" value="Show">
+					<table>
+						<tr>
+							<td></td>
+								<td>Id</td>
+								<td>Name</td>
+								<td>Rank</td>
+								<td>Dept</td>
+								<td>Salary</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="background-color:blue">2</td>
+							<td>Daw Cho</td>
+							<td>Manager</td>
+							<td>Human Resource</td>
+							<td>370000.00</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>4</td>
+							<td>U Khin</td>
+							<td>Clerk</td>
+							<td>Human Resource</td>
+							<td>220000.00</td>
+						</tr>
+						
+
+				</table>
+				</div>
+				
+			</li>
+		</ol>
+	</li>
+	<li>Createe a window form application with following form design.When user clicks "Save" button, user entered data will be saved into "Stcoks" table in "StockDB" database that stored in local SQL server."Stock" table has Id, Item, Price and Balance fields. When user clicks "Clear" button, it clears all textboxes.When user clicks "Close" button, close project. Write code by using Command object.
+		<div style="border:1px solid black">
+
+			Item Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" require >&nbsp;<input type="submit" value="Save"><br><br>
+			Item Name<input type="text" require>&nbsp;<input type="submit"value="Clear"><br><br>
+			Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" require>&nbsp;<input type="submit"value="Clear"><br><br>
+			Balance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" require>
+		</div>
+		<span id="right">(10 marks)</span>
+	</li><br>
+	<li>Write short notes on <span id="line"><b>ANY FIVE</b></span>
+		of the following.<span id="right">(15 marks)</span>
+		<ol type="a">
+			<li>Consumer products</li>
+			<li>Point of sale system(POS)</li>
+			<li>Demand pricing</li>
+			<li>Personnel file</li>
+			<li>Economic order quantity system (EOQ)</li>
+			<li>Benefit plan</li>
+			<li>Reorder-level system</li>
+		</ol>
+	</li><br><br><br><br><br><br><br>
+	<li><b>(a)</b>Define the term <b>Marketing</b><span id="right">
+		(3 marks)</span><br>
+		<b>(b)</b>Describe the <b>priduct pricing information system.</b><span id="right">(9 marks)</span>
+	</li>
+	<li><b>(a)</b> Describe the <b>two production scheduling tools.
+	</b><span id="right">(3 Marks)</span><br>
+	<b>(b)</b>Why is it important to have <b>quality control information system </b> in manufacturing and production sector?
+	<span id="right">(9 marks)</span>
+	</li>
+	<li>
+		<b>(a)</b>What is the <b>JOb analysis and design's output?
+	</b><span id="right">(4 marks)</span><br>
+	<b>(b)</b>What do you mean <b>employee evaluation information system?</b><span id="right">(7 marks)</span>
+	</li>
+</ol>
+</body>
+</html>

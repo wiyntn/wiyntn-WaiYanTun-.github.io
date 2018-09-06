@@ -1,0 +1,175 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Fianl Examination</p>
+<p>Digital System Desig II(CT-305)</p>
+<p>September, 2015</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowe</p>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>A number of speed-enhancing features have been incorporated into the design of computers in recent years. Illustrate these techniques.
+			</li>
+			<li>The performance of a 100MHz microprocessor P is mesured by executing 10,000,000 intructions of benchmark code, whcih is found to take 0.25s. What are the values of CPI and MIPS for this for this performance experiment? Is P likely to be superslar?
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Write down the HDL description of aan 8-bit binary multiplier t the register level to compute<br> Z = Y x X, where the numbers are 8-bit binary fractions in sign-magnitude form. Two 8-bit buses <i>INBUS</i> and <i>OUTBUS</i> form input and output ports. Three 8-bit data registers A, M and Q nd a 3-bit control register <i>COUNT</i> are also contained in this multiplier circuit.
+			</li>
+			<li>Design a sequential circuit that multiplies and unsigned binary number N of arbitrary length by 3. N is entered serilly via input line x wiht its least signifcant bit first. he result representing 3N emerges serially from the circuit's ooutput line z. Construct a state-table for your circuit and give a complete logic circuit that uses D flip-flop and NAND gates only.
+			</li>
+
+
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Construct the truth table for a <b>full subtracter.</b> Show how to implement the full subtracter defined in Figure 3(a) using a few copies as you can of the <i>Actel C-module.</i>
+				Again assume that the input variables are supplied in true form only.<br>
+				<b><------Enter photo---------></b>
+			</li>
+			<li>A <i>J-K flip-flop</i> is called a 1-bit <b>stroage device.</b> (i)Derive the state table for this J-K <i>flip-flop.</i> (ii)What is thee characteeristic equation for <i>J-K flip-flop?</i> (iii)Show how to build a <i>JK flip-flop</i> form a D <i>Flip-flop</i> and a few NAND gates.
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Explain the instruction format of the MIPS RX000 series.</li>
+			<li>Suppose the ARM6 has the following initial register and memory contents (all given in hex code):<br>				R1=00000000; R2=87654321; R3=A05B77F9; NZCV = 0000<br><br>
+
+				Identify the new contents of every register or flag that is changed by the ececution of the set of following instructions. Assume each is executed with the preceding initial state.
+				<br><br>
+
+				MOVCS R1,R2;<br>
+				ANDS R1,R2,R3;<br>
+				MOV R3,#0;<br>
+				ADD R1,R2,R2;<br>
+				MOV R3,R2,LSL#4;<br>
+				EORCSS R1,R2,R3.
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<li>
+		<ol type="a">
+			<li>Show how to use the 10-member instruction set of Figure 5(a) to implement the following operations that correspond to single instructions in many computers; use as few instructions as you can .(i) Copy the contents of memory location X to memory location Y. (ii)Increment the accumulator AC. (iii)Granch to a specified address adr if AC=0. (iv)Decrement the ccumulator AC.
+				<br>
+				<hr>
+				HDL format &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assembly
+				<hr>
+				<ol>
+					<li>AC:=M(X)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LD X
+					</li>
+					<li>M(X):= AC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ST X</li>
+					<li>DR:= AC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MOV DR,AC
+					</li>
+					<li>AC:=DR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MOV AC,DR
+					</li>
+					<li>AC:= AC + DR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADD</li>
+					<li>AC:= AC-DR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SUB
+					</li>
+					<li>AC:= AC and DR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AND
+					</li>
+					<li>AC:= not AC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOT
+					</li>
+					<li>PC:=M (adr) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BRA adr
+					</li>
+				<li>if AC=0 THRN PC:= M (adr) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BZ adr
+				</li>
+				</ol>
+				<hr>
+				<p>Figure 5(a)</p>
+
+
+			</li>
+			<li>
+				Write the vector addition progrm written in 680X0 assembly-language code to compute the sum B:= A+ B for adding two 100 element vector A and B to replace into vector B. Vector A is stored in memory location 2001 and vecotr B is also storeed in memory location 3001.</li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

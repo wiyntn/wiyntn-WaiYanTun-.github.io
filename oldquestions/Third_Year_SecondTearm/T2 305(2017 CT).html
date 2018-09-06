@@ -1,0 +1,197 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Final Term Examination</p>
+<p>Digital System Design II(CT-305)</p>
+<p>September, 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>The performance of a 100 MHz microptrocessor P is measured by executing 10,000,000 instructions of benchmark code, which is found to take 0.25s. What are the values of CPI and MIPS for this performance experiment? Is P likely to be superscalar?
+			</li>
+			<li>Let A= A(1), A(2),...,A(1000) and B = B(1), B(2),.....,B(1000) be two vectors, that is one-dimensional arrays of numbers to be added. The descried vector sum C = A + B is defined by C(1), C(2),...,C(1000) = A(1) + B(1), A(2) + B(2),....,A(1000) + B(1000).Write down the IAS program for this vector addition. The vectors A, B, and C are assumed to be stored sequentially, beginning at locations 1001, 2001, and 3001, respectively.<b id="right">(20 marks)</b></li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Design a serical subtracter where the subtracter's inputs are two unsigned binary numbers n<sub>1</sub> and n<sub>2</sub>; the output is the difference <i>n<sub>1</sub>-n<sub>2</sub>.</i>
+				Construct a stat tabel, an excitation table, and a logic circuit that uses JK flip-flops and NOR gates only.
+			</li>
+			<li>A certain computer system executes a stream of tasks in a manner that can be accurately modeled by an M/M/1 queueing system. The computer is busy 75 percent of the time, and the average job spends four minutes in the computer. (a) How many jobs are in the computer on average? (b) What is the maximum rate at which jobs may arrive at the system before it becomes overloaded? State clearly your definition of overloaded.<b id="right">(20 marks)</b></li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Design a 8-input multiplexer/data selector using two copies of 4-inpur multiplexer/data selector. You may use a few additional gates of any standard types in your design, if needed.</li>
+			<li>Design at the register level a modulo-16 binary up-down counter CNTR. The counter has three funtion control input lines LOAD, which loads the counter with an initial value from a 4-bit external bus BUS, and COUNT, which increments or decrements the counter by one, and DOWN, where DOWN = 1, causes the counter to count down (decrement) and DOWN = 0, causes the conter to count up. The availabel component types(use as many of each as you need) for building CNTR are teh 4-bit D registe; the two-input 4-bit multiplexer; and the two-input m-bit NAND word gate with <br>m=1,2, and 4.<b id="right">(20 marks)</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Suppose the ARM6 has the following initial register and memory contents (all given in hex code):<br>
+				R1 = 0000 0000; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R2 = 8765 4321;<br> R3 = A05B 77F9; 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NZCV = 0000<br>
+				Identify the new contents of every register or flag that is changed by the execution of the following instructions. Assume each is executed with the preceding initial state.<br>
+				(i)MOVCS R1,R2; (ii)ANDS R1,R2,R3; (iii)ADD R1,R2,R2;
+				(iv)MOV R3,R2,LSL#4; (v)EORCSS R1,R2,R3;
+			</li>
+			<li>Write an assembly language program for the multiplication operation AC:= AC x N where the multiplicand is the initial contents of the accumulator AC and the multiplier N ia a variable stored in memory. Assume that the multiplier and multiplicand are both unsigned numbers and that they are sufficiently small that the product will fit in a single word. Use the instruction set of accumulator-based CPU shown in the Table (4-b) for the program.<br>
+				<table>
+					<tr>
+						<td>No.</td>
+						<td>HDL format</td>
+						<td>Assembly</td>
+					</tr>
+					<tr>
+						<td>1.</td>
+						<td>AC:= M(X)</td>
+						<td>LD X</td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td>M(X):=AC</td>
+						<td>ST X</td>
+					</tr>
+					<tr>
+						<td>3.</td>
+						<td>DR:=AC</td>
+						<td>MOV DR, AC</td>
+
+					</tr>
+					<tr>
+						<td>4.</td>
+						<td>AC:=DR</td>
+						<td>MOV AC, DR</td>
+
+					</tr>
+					<tr>
+						<td>5.</td>
+						<td>AC:=AC+DR</td>
+						<td>ADD</td>
+					</tr>
+					<tr>
+						<td>6.</td>
+						<td>AC:=AC-DR</td>
+						<td>SUB</td>
+					</tr>
+					<tr>
+						<td>7.</td>
+						<td>AC:=AC and DR</td>
+						<td>AND</td>
+					</tr>
+					<tr>
+						<td>8.</td>
+						<td>AC:=not AC</td>
+						<td>NOT</td>
+					</tr>
+					<tr>
+						<td>9.</td>
+						<td>PC:=M(adr)</td>
+						<td>BRA adr</td>
+					</tr>
+					<tr>
+						<td>10.</td>
+						<td>If AC=0 then PC:= M(adr)</td>
+						<td>BZ adr</td>
+					</tr>
+				</table><br>
+				<p><b>Table(4-b)</b></p>
+				<b id="right">(20 marks)</b>
+
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Explain the instruction formats of the MIPS RX000 series with examples.
+			</li>
+			<li>Write a program for each of the four processors such as zero-address, one-address, two-address and three-address processors to execute the operation X:= Ax B + CxC<b id="right">(20 marks)
+			</b></li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

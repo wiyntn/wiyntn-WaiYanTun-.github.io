@@ -1,0 +1,244 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Final Examination</p>
+<p>Operating System(CST-301)</p>
+<p>September, 2015</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Define <b id="line">any five</b> of the following:<b id="right">(10 marks)</b>
+		<ol type="a">
+			<li>Program status word</li>
+			<li>Cache memory</li>
+			<li>Port</li>
+			<li>Process</li>
+			<li>Multitasking</li>
+
+		</ol>
+	</li>
+	<li>Differentiate <b id="line">Any five</b> of the followings:<b id="right">(20 marks)</b><br><br>
+		<ol type="a">
+		<li>Programmed I/O and Interrupt-driven I/O</li>
+		<li>Real address and virtual address</li>
+		<li>Mode switch and process switch</li>
+		<li>User-level thread (ULT) and Kernel-level thread(KLT)</li>
+		<li>Preemptive and non-preemptive scheduling</li>
+		<li>Logical I/O and device I/O</li> 
+		</ol><br><br><br><br>
+	</li><br><br><br><br><br><br>
+	<li>Answer <b id="line">any five</b> on the followings:<b id="right">(30 marks)</b>
+		<ol type="a">
+			<li>Describe the <b>two</b> main categories of processor registers.</li>
+			<li>What is an interrupt? Describe classes of interrupts.</li>
+			<li>Describe the hardware features of operation system.</li>
+			<li>Briefly explain about a five state model with figure.</li>
+			<li>Briefly explin about a five state model with figure.</li>
+			<li>Describe the <b>two</b> disadivantages of User-level thread (ULTs) compared to Kernel-level thread (KLTs).
+			</li>
+			<li>Briefly explain the disk scheduling policies of the First-In-First-Out (FIFO) and Shortest Service Time First(SSTF).
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br>
+<br>
+
+
+	<li>
+        
+        <ol type="a">
+        <li>The hypothetical machine has the following instructions:<br>
+        	0001 = Locad AC from  memory<br>
+        	0111 = Store AC to memory<br>
+        	0101 = Add to AC from memory<br>
+
+          Assume that both instruction and data are 16 bits and 12 bits. Address identifies location 940 contains a value of 5 and 941 contains a value of 3. The program starts at memory location 300. Show the program execution with appropriate figures for the following program:<br>
+          <ol type="i">
+          	<li>Load AC from memory location 940</li>
+          	<li>Add contents of memory location 941</li>
+          	<li>Store AC to memory location 941</li>
+          	<b id="right">(10 Marks)</b>
+          </ol>
+        </li> 
+        <li>Consider the disk scheduling probelm: we assume that a disk with 200 tracks and that the disk request there has random request in it.The requested tracks, in the order received by the disk shceduler are 129, 25, 110, 186, 145, 48, 10, 70 and 84. (Assume that starting track is 100 in the direction of decreasing track number.) Calculate the average seek length for FIFO, SSTF, SCAN and CSCAN scheduling algorithms.
+        	<ol type="i">
+        		<li>Illustrate the performance of disk scheduling algorithms.</li>
+        		<li>Compare the results in tabular form.<b id="right">(10 marks)</b></li>
+        	</ol>
+        </li>
+        </ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>
+				<ol>
+					<li>What is the critical performance requirement in an interactive operation system?<b id="right">(2 marks)</b>
+					</li>
+					<li>What is the difference between turnaround time and response time?<b id="right">(4 marks)</b></li>
+
+					<li>Briefly describe Shortest Remaining Time (SRT) scheduling.<b id="right">(4 marks)</b></li>
+
+				</ol>
+			</li>
+			<li>
+				Given the following set of processes with their arrival time and service time:<br>
+				<table>
+					<tr>
+						<td>Process Names</td>
+						<td>Arrival Time</td>
+						<td>Service Time(T<sub>3</sub>)</td>
+						<td>Start Tiem</td>
+						<td>Finish Time</td>
+						<td>Turnaround Time(T<sub>t</sub>)</td>
+						<td>T<sub>t</sub>/T<sub>2</sub></td>
+					</tr>
+					<tr>
+						<td>P</td>
+						<td>0</td>
+						<td>3</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Q</td>
+						<td>2</td>
+						<td>4</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>R</td>
+						<td>2</td>
+						<td>4</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>S</td>
+						<td>6</td>
+						<td>6</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>T</td>
+						<td>8</td>
+						<td>5</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table><br>
+				Compute the total turnaround time and the average trunaround time for <b>First-Come-First-Served (FCFS), Shortest Process Next (SPN) and Highest Respones Ratio Next (HRRN).</b> Show the execution pattern for these policies for one cycle. <b id="right">(10 marks)</b>
+				<br>
+				Example;
+
+			</li>
+	</ol>
+</li>
+
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

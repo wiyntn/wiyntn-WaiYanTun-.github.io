@@ -1,0 +1,451 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+
+#table, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#table {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+    
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Final Term Examination</p>
+<p>Advanced Programming Techniques(CS-306)</p>
+<p>September, 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li><b>Answer the followings objective type questions.<b id="right">(10 Marks)</b></b>
+		<ol type="i">
+			<li>________ in a language can refer to several different characteristics.
+			</li>
+			<li>Perl includes associative arrays, which are called_______.
+			</li>
+			<li>The brackets, braces, and parentheses in the EBNEF extensions are_________.
+			</li>
+			<li>The _________ of any rightmost sentential form is its leftmost simple phrase.
+			</li>
+			<li>The _______ is one in which the range of possibel values can be easily associated with the set of positive integers.<br>
+				(A)derived type (B)compatible type (C)strongly type (D)ordinal type
+			</li>
+			<li>__________ is the collection of the attributes of a variable.<br>
+				(A)Data type (B)Descriptor (C)Array (D)Record
+			</li>
+			<li>The logical expressions used in axiomatic semantics are called__________.<br>
+				(A)assertions (B)denotations (C)operations (D)conditions 
+			</li>
+			<li>Which produces faster program execution, a/an________?<br>
+				(A)analyzer (B)pure interpreter (C)linker (D)compiler
+			</li>
+			<li>The scoe of a variable is the range of statements in which the variable is visible.(True/False)
+			</li>
+			<li>Synthesized attributes are used to pass semantic information down and across a tree.(True/False)
+			</li><br>
+		</ol><br><br>
+	</li><br><br><br>
+	<li><b>Define <b id="line">Any Five</b> of the followings.
+		<b id="right">(10 marks)</b>
+	</b>
+	<table>
+		<tr>
+			<td>(i)Orthogonality</td>
+			<td>(ii)Denotational Semantics</td>
+		</tr>
+		<tr>
+			<td>(iii)Attribute Grammer</td>
+			<td>(iv)Left Factoring</td>
+		</tr>
+		<tr>
+			<td>(v)Lifetime</td>
+			<td>(vi)Union</td>
+		</tr>
+	</table>
+	</li>
+	<li><b>Write the short note <b id="line">(Any Five)</b> of the followings.</b><b id="right">(20 Marks) </b>
+		<ol type="i">
+			<li>Why is type checking the parameters of a sub-program important?
+			</li>
+			<li>Different between static and dynamic semantics.</li>
+			<li>Describe the operational of general language recognizer.</li>
+			<li>What is he general problem with static scoping?</li>
+			<li>Describe LR parsers and three advantages of them.</li>
+			<li>What are the design issues for enumeration types?</li>
+			<li>What are the advantages and disadvantages of decimal data types?
+			</li>
+		</ol>
+	</li>
+	<li><b>Briefly discuss <b id="line">Any Two</b> of the following concepts.</b><b id="right">(14 marks)</b>
+		<ol type="i">
+			<li>Explain detail about the pure interpretation system.</li>
+			<li>Define lexical analyzer. Describe briefly the three approaches to building a lexical analyzer.</li>
+			<li>Define explicit heap-dynamic and implicit heap-dynamic variables. What are their advantages and disadvantages?
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>
+				<ol type="i">
+					<li>Write a BNF description of the Boolean expressions of Java, including the three operators &&,||, and ! and the relational expresssions.<b id="right">(5 marks)</b>
+					</li>
+					<li>Convert the BNF to EBNF.<b id="right">(5 marks)</b>
+						<br>
+						<b><</b>expr>  <b style="font-size:1.5em">→</b> 
+						<b><</b>expr> + <b><</b>term> <b>|</b><br><b><</b>expr> - <b><</b> term> <b>|</b> <b><</b>term>
+						<br>
+
+						<b><</b>term>  <b style="font-size:1.5em">→</b> 
+						<b><</b>term> * <b><</b>factor> <b>|</b> <b><</b>term> <b>/</b> <b><</b>factor> <b>|</b> <b><</b>factor>
+						<br>
+
+						<b><</b>factor>  <b style="font-size:1.5em"> → </b>
+						<b><</b>exp> ** <b><</b>factor> <b>|</b> <b><</b>exp><br>
+
+						<b><</b>exp> <b style="font-size:1.5em">→</b> 
+						( <b><</b>sexpr>) <b>|</b> <b><</b>id> 
+
+
+					</li>
+				</ol>
+			</li>
+			<li>Give the following grammar and the right sentential form, draw a parse tree and show the phrases and simple phrases, as well as the handel.<b id="right">(10 marks)</b><br>
+				 S <b style="font-size:1.5em">→</b> AbB <b>|</b> bAc
+				 A <b style="font-size:1.5em">→</b> aBB 
+				 B <b style="font-size:1.5em">→</b> Ac| cBb |c<br>
+				 (i)aAcccbbc (ii)AbcaBccb
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>
+				<ol type="i">
+					<li>Using the following grammar:<b id="right">(6 marks)
+					</b><br>
+					<b><</b>assign> <b style="font-size:1.5em">→</b> <b><</b>id> = <b><</b>expr><br>
+
+					<b><</b>id> <b style="font-size:1.5em">→</b> a|b|c<br>
+
+					<b><</b>expr> <b style="font-size:1.5em">→</b> <b><</b>expr> + <b><</b>term> | <b><</b>term><br>
+
+					<b><</b>term> <b style="font-size:1.5em">→</b> <b><</b>term> * <b><</b>factor> <b>|</b> <b><</b>factor><br>
+					<b><</b>factor> <b style="font-size:1.5em">→</b> (<b style="font-size:1.5em">→</b>expr>) <b>|</b> <b><</b>id>
+					<br>
+					Show a leftmost derivation and parse tree of the sentence a = a* (c + (b * a)).
+
+
+				</li>
+				<li>Using the following grammar:<b id="right">(7 marks)</b>
+
+					<ol>
+						<li>E <b style="font-size:1.5em">→</b> E + T</li>
+						<li>E <b style="font-size:1.5em">→</b> T</li>
+						<li>T <b style="font-size:1.5em">→</b> T * F</li>
+						<li>T <b style="font-size:1.5em">→</b> F</li>
+						<li>F <b style="font-size:1.5em">→</b> (E)</li>
+						<li>F <b style="font-size:1.5em">→</b> id</li>
+					</ol><br><br><br><br><br><br><br><br><br><br>
+					Show a complete parse, including the parse stack contents, input string, and action for the string id + (id*id), using the grammar and parse tabel in below the figure.<br>
+					<table id="table">
+						<tr>
+							<td></td>
+							<td colspan="6">Action</td> 
+							<td>&nbsp;&nbsp;&nbsp;</td>
+							<td colspan="3">Goto</td>
+						</tr>
+						<tr>
+							<td><b>state</b></td>
+							<td><b>id</b></td>
+							<td><b>+</b></td>
+							<td><b>*</b></td>
+							<td><b>(</b></td>
+							<td><b>)</b></td>
+							<td><b>$</b></td>
+							<td><b></b></td>
+
+							<td><b>E</b></td>
+							<td><b>T</b></td>
+							<td><b>F</b></td>
+							
+
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>S5</td>
+							<td></td>
+							<td></td>
+							<td>S4</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							
+
+						</tr>
+						<tr>
+							<td>1</td>
+							<td></td>
+							<td>S6</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>accept</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							
+
+						</tr>
+						<tr>
+							<td>2</td>
+							<td></td>
+							<td>R2</td>
+							<td>S7</td>
+							<td></td>
+							<td>R2</td>
+							<td>R2</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td></td>
+							<td>R4</td>
+							<td>R4</td>
+							<td></td>
+							<td>R4</td>
+							<td>R4</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>S5</td>
+							<td></td>
+							<td></td>
+							<td>S4</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>8</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td></td>
+							<td>R6</td>
+							<td>R6</td>
+							<td></td>
+							<td>R6</td>
+							<td>R6</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>S5</td>
+							<td></td>
+							<td></td>
+							<td>S4</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>9</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>S5</td>
+							<td></td>
+							<td></td>
+							<td>S4</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td></td>
+							<td>S6</td>
+							<td></td>
+							<td></td>
+							<td>S11</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td></td>
+							<td>R1</td>
+							<td>S7</td>
+							<td></td>
+							<td>R1</td>
+							<td>R1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td></td>
+							<td>R3</td>
+							<td>R3</td>
+							<td></td>
+							<td>R1</td>
+							<td>R1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td></td>
+							<td>R5</td>
+							<td>R5</td>
+							<td></td>
+							<td>R5</td>
+							<td>R5</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					</table>
+				</li>
+				</ol>
+			</li>
+			<li>Consider the following Python program:<b id="right">(7 marks)</b><br>
+				x=9; y=14; z=15;<br>
+				<b>def</b>sub 1();<br>
+				a=7; y=9; z=11;<br>
+				.........<br>
+				<b>def</b>sub2():<br>
+				<b>global x;</b><br>
+				a=18; x=11; w=1;<br>
+				.........<br>
+				<b>def</b> sub3():<br>
+				<b>nonlocal a;</b><br>
+				a=19; b=21; z=23;<br>
+				.........<br>
+				.........<br>
+				List all the variables; along wiht the program units where they are declared, that are visible in the bodies of sub1, sub2 and sub3, assuming static scoping is used.
+			</li>
+			<li>Consider the followig Java Script program:<b id="right">(6 marks)</b><br>
+				//main program<br>
+				<b>var</b> x,y,z;<br>
+				<b>function sub1(){</b><br>
+				<b>var</b> a,y,z;<br>
+				..........<br>
+			}<br>
+			<b>function</b> sub3(){<br>
+			var a,x,w;<br>
+			.........<br>
+		}<br>
+		Given the following calling sequence and assuming that dynamic scoping is used, what variables are visibel during execution of the last subprogram activated? Include with each visible variable the name of the unit where it is declared.<br>
+		<ol type="i">
+			<li>main calls sub1; sub1 calls sub2; sub2 calls sub3.</li>
+			<li>main calls sub2;sub2 calls sub3; sub3 calls sub1.</li>
+			<li>main calls sub3;sub3 calls sub1; sub1 calls sub2.</li>
+		</ol>
+			</li>
+		</ol>
+		</li>
+</ol>
+	</body>
+</html>
+	

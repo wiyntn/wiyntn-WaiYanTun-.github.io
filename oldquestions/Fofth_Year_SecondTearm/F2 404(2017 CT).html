@@ -1,0 +1,171 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table, td, th {
+    
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Four Year)</p>
+<p>Computer Organization </p>
+<p>Final Examination</p>
+<p>Computer Architecture(CT-404)</p>
+<p>September, 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>Consider the twos-complement multiplication using the symbolic microprogram given in Figure 1(a).(i)Write a binary microprogram for this algorithm.(ii)Determine the size of control memory for the horizontal version of microinstruction format.(iii) What would be the microinstruction format after removing redundant control fields of(i)?<b id="right">(8 marks)
+			</b><br>
+			<b><----Enter photo------></b>
+		</li>
+		<li>Illustrating two-level control store organization for nanoprogramming, desctibe its advantages and disadvantages.<b id="right">(8 marks)</b>
+		</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>R2/3000 series microprocessors employ a five -stage instruction pipeline such as IF: instruction fetchinng, FE: operand loading while decoding the fetched instruction, EX: data processing, MA:operand accessing and WB: operand storing. Illustrate how instruction pipeline is fully utilized and outputs a new result every clock cycle from a start-up phase to 9 clock cycles under ideal situatin. If the instruction sequence in this straming mode of operation is LD, ADD, ST, SUB, what would occur in this pipeline? Again, illustrate how this situationcan be dealt with different ways in the instruction pipeline.<b id="right">(9 marks)</b>
+			</li><br>
+			<li>The hardware cost of a new m-stage, single-function pipeline is approximated by 22m + 30. The latency of the function to be executed is 90 ns if pipelining is not used. The pipelined implementation's interstage buffers are eexpected to add an additional 10m ns to this latency. Estimate the number ob stages needed to optimize the pipeline's performance/cost ratio.<b id="right">(9 marks)</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>A RAM is to be designed with a target cpacity of 16 MB. Three DRAM ICs of the kind shown in Figure 3(a) are available to serve as components: (i) a 4M x 1 bit DRAM costing $22 per IC; (ii) 1Mx2 bit DRAm costing $10; and (iii) a 256Kx8bit DRAM costing $4.50.Access circuitry, include ICs and writing is estimated to cost $ x + 10y, where x is the number of RAM ICs used and y is number of address bits to be decoded exteernally. Determine which type of DRAM IC would minimize the cost of the memory.<b id="right">(12 marks)</b><br>
+				<b><---Enter photo------></b>
+			</li>
+			<li>Describe the reasons for using virtual memory.<b id="right">(4 marks)</b></li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>The performance of a two-level memory is often measured in terms of the hit ratio H. Assume that faster memory is M<sub>1</sub>, and the number of address references satisfied by M<sub>1</sub> an M<sub>2</sub> are denoted by N<sub>1</sub> and N<sub>2</sub>, respectively. Express the access efficiecy as a function of hit ratio.<b id="right">(8 marks)	
+			</b>
+		</li>
+		<li>
+			For a multilevel memory management, how to get the real address A<sub>R</sub> from virtual address A<sub>v</sub> in the dynamic address-translation system by using TLB (Translation Look-aside Buffer). Discuss about this operation with diagram.<b id"right">
+			(8 marks)</b>
+		</li>
+		 </ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br>
+
+	<li>
+		<ol type="a">
+			<li>Consider the following page address stream.
+				<table>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>1</td>
+						<td>2</td>
+						<td>5</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+					</tr>
+				</table><br>
+				Illustrate the assignment of pages to M<sub>1</sub> using First-In First-Out replacement with memory capacities of (i)3, and (ii)4pages. From this illustrations, prove the FIFO is not a stack algorithm.<b id="right">(8 marks)</b>
+			</li>
+			<li>Consider a two-level memory (M<sub>1</sub>, M<sub>2</sub>) with blockk-transfer time from M<sub>2</sub> to M<sub>1</sub> is given as t<sub>B</sub>. Determine system performance on the effect of reducion in H from 99 percent to 95 percent. Suppose that M<sub>2</sub> is six times slower than M<sub>1</sub>.<b id="right">(8 marks)</b>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>With the aid of diagrams,give a brief account on the differences between 
+				<ol type="i">
+					<li>Daisy chaining and Polling bus-arbitrations.</li>
+					<li>Single-line and Multi-line Interrupt System<b id="right">(9 marks)</b>
+					</li>
+				</ol>
+			</li>
+			<li>Showing teh esssential structures of memory-mapped IO and IO-mapped IO, discuss how a memory-referencing instruction is facilitated in each programmed IO.<b id="right">(9 marks)</b>
+			</li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

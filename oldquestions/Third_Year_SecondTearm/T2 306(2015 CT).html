@@ -1,0 +1,350 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Fianl Examination</p>
+<p>Assembly language(CT-306)</p>
+<p>September, 2015</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowe</p>
+</div>
+<ol>
+	<li>
+		<ol type="a">
+			<li>The microprocessor can read/write 16 bit data from or to _______.<br>
+				What are the four pimary operations of a MPU?<br>
+				Find the Hex codes for the following instructiosn, Identify the opcodes and operands, and show the order of entering the codes in memory.<br>
+				(i)STA 2030H (ii)JMP 2070H (iii)CMA
+			</li>
+			<li>
+				<ol type="i">
+					<li>Illustrate the memory address range of the chip with 1024 bytes of memory, shown in Figure 1, and explain how the range can be changed by removing all innverter line A<sub>15</sub> to A<sub>10</sub>.
+					</li>
+					<li>Identify appropriate control signals that are generated at the output of 2-to-4 decoder in Figure2.<br>
+						<b><-----Enter photo--------></b>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Two cachine codes -0011 1110 (3EH) and 0011 0010 (32H) are stored in memory locations 2000H and 2001H, respectively. The first machine code (3EH) represents the opcode to load a data byte in the accumulator, and the second code (32H) represents thee data byte to be loaded in the accuulator. Illustrate the bus timings as these machine codes are executed. Calculate the time required to execute the OPcode Fetch and the Memory Read cycles and the entire instruction cycle if thee clok frequency is 2MHz.
+			</li>
+			<li>Show a circuit all eight address lines are decoded using an 8-input NAND gate to generate output port 00H and write instructions to display digit 7 at thee LED.
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>(i)What are the cotrol signals necessary in the memory-mapped I/O? Explain why the number of output ports in the peripheral-mapped I/O is restricted to 256 ports.<br><br>
+				(ii)Load the data byte A8H in register C, Msk the high-order bits(D7-D4), adn display the low-order bits (D3-D0) at an output port.
+			</li>
+			<li>(i)If the switch S7 of the input PORT0 connected to the data line D<sub>7</sub> is a logic 1 and other switches are at logic 0, specify the contents of the accumulator when the instruction IN PORT0 is executed.<br><br>
+			
+			(ii)Write instructions to load the hexadecimal number 65H inregister C, and 92H in the accumulator  A. Display the number 65H at PORT0 and 92H at the PORT1.
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>A set of eight reading is stored in memory starting at location xx70H. Write a program to check whether a byte 40H exits in the set. If it does, stop checking and display its memory location; otherwise output FFH>
+			</li><br>
+			<li>
+				(i)Write the instruction to load the number 2070H in the register pair DE. Increment the number using the instructions INR, and INX.<br><br>
+				(ii)Register BC contains 3294H, and register DE contain 2183H. Write instructions to add these two 16-bit numbers, adn placee the sum in memory locations 2030H and 2031H.
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Write a program to count continuously in hexadecimal from FFH to 00H in a system with a 0.5µs clock period.Use register C to set up a two millisecond(ms) delay between each count and display the numers at output PORT1. Show your calculations to set up the 2ms delay.
+
+			</li>
+			<li>Illustrate the contents of the stack memory and register when PUSH and POP instructions are executed, and explain how memory pointers are exchanged for the following program. Explain the variaous contents of the user memory.<br><br>
+				<table>
+					<tr>
+						<td>2000</td>
+						<td> LXI SP, 2400H :Main program</td>
+					</tr>
+					<tr>
+						<td style="font-size:2em">↓</td>
+						<td style="font-size:2em">↓</td>
+					</tr>
+					<tr>
+						<td>2040</td>
+						<td>CALL 2070H</td>
+					</tr>
+					<tr>
+						<td>2041</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2042</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2043</td>
+						<td>NEXT INSTRUCTION</td>
+					</tr>
+					<tr>
+						<td style="font-size:2em">↓</td>
+						<td style="font-size:2em">↓</td>
+					</tr>
+					<tr>
+						<td>205F</td>
+						<td>HLT</td>
+					</tr>
+				</table>
+				<hr>
+				<br>
+				<table>
+					<tr>
+						<td>2070</td>
+						<td>First Subroutine Instruction</td>
+					</tr>
+					<tr>
+						<td style="font-size:2em">↓</td>
+						<td style="font-size:2em">↓</td>
+					</tr>
+					<tr>
+						<td>207F</td>
+						<td>RET</td>
+					</tr>
+					<tr>
+						<td>2080</td>
+						<td style="font-size:2em">↓</td>
+					</tr>
+					<tr>
+						
+						<td style="font-size:2em">↓</td>
+						<td>Other Subroutines</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="font-size:2em">↓</td>
+					</tr>
+					<tr>
+						<td>2398</td>
+						<td>Empty Space</td>
+					</tr>
+					<tr>
+						<td>23FF</td>
+						<td style="font-size:2em">↓</td>
+					</tr>
+					<tr>
+						<td>2400</td>
+						<td></td>
+					</tr>
+				</table>
+				<div style="border:1px solid black">
+					//CalculatorClient.java<br>
+					import java.rmi.Naming;<br>
+					import java.rmi.RemoteException;<br>
+					import java.net.MalformedURLException;<br>
+					import java.rmi.NotBoundException;<br><br>
+
+					public class CalculatorClient{<br>
+					public static void main(String[] args){<br>
+					try{<br>
+					Calculator c = (Calculator)<br>
+					____________.lookup(<br>
+					"rmi://localhost/____________");<br>
+					System.out.println(c.sub(10,3));<br>
+					System.out.println(c.add(4,5));<br>
+					System.out.println(c.mul(3,6));<br>
+					System.out.println(c.div(9,3));<br>
+					
+				}<br>
+				catch (MalformedURLException murle){<br>
+				System.out.println();<br>
+				System.out.println(<br>
+				"MalformedURLException");<br>
+
+				System.out.println(murle);<br>
+
+			}<br>
+			catch (RemoteException re){<br>
+			System.out.println();<br>
+			System.out.println(<br>
+			"RemoteException");<br>
+			System.out.println(re);<br>
+
+		}<br>
+		catch (NotBoundException nbe){<br>
+		System.out.println();<br>
+		System.out.println(<br>
+		"NotBoundException");<br>
+		System.out.println(nbe);
+
+	}<br>
+	catch(<br>
+	java.lang.ArithmeticException<br>
+	_________ae){<br>
+	System.out.println();
+}
+	)
+				}
+
+				}
+
+				</div>
+				<br><br>
+				<div style="border:1px solid black">
+					//Calcultor.java<br>
+					public ________ Calculator<br>
+					extends &nbsp;&nbsp;&nbsp; java.rmi.<br>
+					__________{<br>
+					public long add (long a, long b)<br>
+					throws java.rmi._____________;<br><br>
+					public long sub(long a, long b)<br>
+					throws java.rmi.___________;<br><br>
+					public long mul(long a, long b)<br>
+					throws java.rmi._________;<br>
+				}
+				</div><br>
+				
+			</li>
+
+		</ol>
+	</li>
+	<li>Answeer <b>all</b> questions.<b id="right">(10 marks)</b>
+		<ol>
+			<li>TCP is used for reliable ...........based I/O across the network.<br>
+				(a)stream (b)message (c)block (d)packet
+			</li>
+			<li>Client and <b>Server</b> computers establish their connection by means of a special object called a ............<br>
+				(a)datagram (b)protocol (c)socket (d)port
+
+			</li>
+			<li>Which method is used to establish a port where a server waits for request?<br>
+				(a)ServerSocket() (b)PortConnect() (c)getInputStream() (d)ClientServer()
+			</li>
+			<li>What Java package contains classes that support network programming?<br>
+				(a)jav.packet.* (b)java.network.* (c)java.net.* (d)java.awt.*
+			</li>
+			<li>What is Remote method invocation (RMI)?<br>
+				(a)RMI allows us to invoke a method of java object that executes on anothr machine.<br>
+				(b)RMI allows us to invoke a method of java object that executes parallel in same machie.<br>
+				(c)RMI allows us to incoke a method of java object that executes parallesl in same machine.<br>
+				(d)None of the mentioned
+			</li>
+			<li>To start an RMI registry, use ............... from the command window.<br>
+				(a)strt rmiregistry (b)rmiregistry (c)rmiregistry 6000 (d)start rmiregistry 6000
+			</li>
+			<li>
+				The ......... method is called when the servlet is first created, adn is not called as long as the servlet is not destroyed.<br>
+				(a)service (b)destory (c)init (d)getServletInfo
+			</li>
+			<li>Which method decide which method will call i.e doGet() of doPost() based on http method of http request?<br>
+				(a)doOption (b)doTrace (c)doMethod (d)getServletInfo
+			</li>
+			<li>
+				Which of the following statemetns are true?<br>
+				<ol>
+					<li>JSP is translated into HTML by a Web server when a JSP is called.
+					</li>
+					<li>JSP is translated into Java servlet by a Web server when a JSP is called?
+					</li>
+					<li>You can embed Java code in JSP.
+					</li>
+					<li>JSP is trnslated into XML by a web server when a JSP is called.<br>
+						(a)1 only (b)2 and 3 (c)1,2 and 3 (d)none
+					</li>
+				</ol>
+			</li>
+			<li>There are .......... mplicit objects in JSP page.<br>
+				(a)7 (b)9 (c)4 (d)11
+			</li>
+		</ol>
+
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>In an online application store, the user can selecct and request the desire book from the list (Java Programming, Basic C#, SQL) to the server from a simple html form (booklist.html). The server uses the servlet (DisplayServlet.java) to see what parameters are sent and dispaly the result to the user again.<b id="right">(10 marks)</b>
+			</li>
+			<li>Write a simple Servlet that uses HttpSession Object of sessioin tracking to count the number so times a client has accessed it.All the binding for current session are display by Servlet.<b id="right">(10 marks)</b><br>
+			</li><br>
+		</ol><br>
+
+	</li><br>
+	<li>Write a web application by creation two JSP pages and one Java Bean class. The client can request with student name and rollno in a JSP form (stuform.jsp). The bean class (Student.java) is instantiated to set from the incoming request any appropriate value. By using JSP's bean, you can display the student's name and rolllno on JSP page (stubean.jsp).<b id="right">(10 marks)</b>
+	</li>
+
+</ol>
+</body>
+</html>
+
+
+
+

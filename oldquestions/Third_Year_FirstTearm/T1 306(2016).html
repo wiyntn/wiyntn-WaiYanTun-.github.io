@@ -1,0 +1,355 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+</style>
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Mid Tearm Examination</p>
+<p>Advanced Java Programming(CS-306)</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Choose the Correct Answer for the following Questions.
+		<ol type="a">
+			<li>Which method is used to establish a port where a server waits for request?<br>
+				A.ServerSocket B.PortConnect()
+				C.getInputStream() D.ClientServer()
+			</li>
+			<li>The method forword (request,response) will<br>
+				A.return back to the same method from where the forward was invoked<br>
+				B.not return back to the same method from where the forward was invoked and the web pages navigation continues<br>
+				C.Both A and B are correct<br>
+				D.None of the above
+			</li>
+			<li>
+				To start an RMI registry, use ______ from the command window.<br>
+				A.start rmiregistry B.rmiregistry
+				C.rmiregistry 6000 D.start rmitegistry 6000
+			</li>
+			<li>Which of the following are the session tracking techniques?<br>
+				A. URL rewriting, using session object, using cookies, using hidden fields<br>
+				B. URL rewriting, using servlet object, using response object, using cookies<br>
+				C. URL rewriting, using servlet object, using response object, using session object<br>
+				D. URL rewriting, using servlet object, using response object, using hidden fields
+			</li>
+			<li>The init paramenter name and value pairs that are defined in web.xml file are handled by <br>
+				A. servletConfig object C.servletContext object
+				<br>
+				B. servletContext object<br>
+				C.servletRequest object <br>
+				D.servletResponse object
+			</li>
+			<li>A deployment descriptor (web.xml) describes<br>
+				A.web component rewponse settings<br>
+				B.web component settings<br>
+				C.web component request objects<br>
+				D.All of the above
+			</li>
+			<li>JSP embeds in _______ in _________ .<br>
+				A. Srevlet, HTML B.HTML,Java C.HTML,Servlet
+				D.Java,HTML
+			</li>
+			<li>What is a Hidden Comment in JSP?<br>
+				A. < % ---- % > B.< % ---- % ><br>
+				C. < !--- --- >) D.(// and /* and */)
+			</li>
+			<li>The _____ is used to call other Servlet or JSP from the current Servlet?<br>
+				A. ResponseDispatcher B.RequestDispatcher <br>
+				C. ServletInvoker D.None of the above
+			</li>
+			<li>The JDBC returns the query in _______.<br>
+				A.Resultset B.DatabaseMetadata <br>
+				C.Preparedstatment D.callablestatement
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Develop a Client-Server system in which the client connects to a server at localhost. The server is listening to the incoming connection at port (6000). When the connection is established, the client interact with user to get three input number (yard, feet and inches). Then, Client sends three input data to daata to the server. The server accepts inputs, xonverts this yard, feet and inches into inches and sends the result back to the client. (Use- 12 inches equal one foot and 3 feet equal a yard).Write two programs for client side and server side.<span id="right">(10 Marks)</span>
+			</li>
+			<li>Complete the following code:<span id="right">
+				(10 Marks)</span><br>
+				/* TemplIntf.java */<br>
+
+				import java.rmi._________;<br>
+				public interface TempIntf extends ______{<br>
+				public double CtempToFtemp(double ctemp) throws________;<br>
+
+
+			}<br>
+			/*TempImpl.java*/<br>
+			import java.rmi,*;<br>
+			import java.rmi.server.*;<br>
+			import java.rmi.registry.*;<br>
+			import java.net.MalformedURLException;<br>
+			public class TempImpl extends _______ implements ______<br>
+			{<br>
+			TempImpl () throws _______{<br>
+			{super();}<br>
+
+
+		}<br>
+		public static void main (String args[]){<br>
+		try{<br>
+		TempImpl t= new TempImpl ();<br>
+		Naming.rebind("CalculateService",t);<br>
+
+
+	}catch(Exception e) {System.out.println("Trouble:" + e);}
+	<br>
+	}<br>
+
+		}<br>
+		/*TempClient.java*/<br>
+		import java.rmi.*;<br>
+		import java.net.MalformedURLException;<br>
+
+		public class TempClent{<br>
+		public static void main (String args[]) throws Exception{<br>
+		double ft,ct;<br>
+		int ch;<br>
+		BufferedReader br= new BufferedReader(new_____(System.in));<br>
+		System.out.println("Enter Celsius temperature value=");
+		<br>
+		ct = Double.parseDouble(br._______());<br>
+		try{<br>
+		TempIntf t= (TempIntf)Naming.lookup("_______");<br>
+		ft = t._______(ct);<br>
+		System.out.println("Equivalent Fahreneit temperature is " + ft);<br>
+	}catch(MalformedURLException murle)<br>
+	{
+	System.out.println("MalformedURLException");
+}
+
+	}
+	}
+
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Create an Online Book Store web application with the followings.<span id="right">(20 Marks)
+			</span>
+			<ul>
+				<li>Login page which contains two text boxes to enter username and password to login and one submit button.
+				</li>
+				<li>Login srvlet which gets username and password from login page and check login username is matched with "user" and password is "reader".
+				</li>
+				<li>If login user is invalid, it will redirect to login page. If valid, it will show welcome page to the user as the following figure.
+				</li>
+			</ul>
+			<div style="border: 1px solid black"><br>
+				<h2>Book Store System</h2>
+				<table>
+					<tr>
+						<td>User Name</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="text"></td>
+					</tr>
+				</table><br>
+				<p><input type='submit' value="Login"></p>
+			</div><br>
+
+
+			<div style="border: 1px solid black"><br>
+				<h2>Welcome to Our Books Store</h2>
+				<table>
+					<tr>
+						<td><input type="checkbox">Java Server Programming
+						</td>
+						<td>5500</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">Software Engineering
+						</td>
+						<td>5000</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">Operating System
+						</td>
+						<td>3500</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox">C++ Programming
+						</td>
+						<td>4500</td>
+					</tr>
+
+				</table><br>
+				<p><input type="button" value="Check Out"></p>
+			</div>
+			When user ends the shopping, click the "Check Out"
+			button, the following CheckOut page will be shown to user. Write definition and servlet mapping in web.xml.
+		
+			<div style="border:1px solid black">
+				<h4>All books in your cart</h4>
+				<ul>
+					<li>Java Server Programming</li>
+					<li>Operation System</li>
+				</ul>
+				 There are totally 2 Book(s) in your cart.<br>
+				 Total Book Cost = 9000
+			</div>
+		</li>
+		<li>Write the web component, EmployeeServlet which accepts employee id, name and email.The program must check whether the user input all data or not. If the user input all data, the result servlet display all input data. Otherwise, the program indicates the missing absent input box as "Miss_empid" etc., Write this program by using Cookie.<span id="right">(10 Marks)</span>
+		</li>
+		</ol>
+	</li>
+	<li>
+		Write a web application by creation two JSP pages and one Java Bean class. The first JSP page "userInfo.jsp" is describe as figure-1. This page can accept the first Name, lastName, Sex, DataOfBirth and Email as a client. The Bean class "user.java" is instanitiated from the incoming request with any appropriate value. By using JSP's bean, you can display the user information on "displayInfo.jsp" as describe in following figure-2.<br>
+		In figure-1, the user must enter first Name, Last Name and Email. The DateOfBirth must be selected from the select boxes and the user have to choose the sex information. After submitting that information, the bean class is applied and display the information with table as describe in figure-2.<span id="right">(20 marks)</span><br>
+		<div style="border:1px solid black"><br>
+			<h2>User Information</h2>
+			<table>
+				<tr>
+					<td>First Name</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Sex</td>
+					<td><input type="radio">Male<input type="radio">Female</td>
+				</tr>
+				<tr>
+					<td>Date Of Birth</td>
+					<td><select><option>1980</option></select>
+					<select><option>January</option></select>
+					<select><option>1</option></select>
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text"></td>
+				</tr>
+			</table><br>
+			<p><input type="button" value="View-User Info"></p>
+
+		</div>
+		<h3 style="text-align:center">Figure-1</h3><br>
+
+		<div style="border:1px solid black"><br>
+			<h2>User INformation</h2>
+			<table border="1" align="center">
+				<tr>
+					<td>First Name</td>
+					<td>Moe Moe</td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td>Hlaing</td>
+				</tr>
+				<tr>
+					<td>Gendr:</td>
+					<td>Female</td>
+				</tr>
+				<tr>
+					<td>Date of Birth:</td>
+					<td>3-February-1982</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>moe@gmail.com</td>
+				</tr>
+			</table><br>
+
+		</div>
+		<h3 style="text-align:center">Figure-1</h3><br>
+
+
+	</li>
+	<li>
+		<ol type="a">
+			<li>Write a JSTL page for the following output by using the array, flowers={"Rose","Jasmine", "Gardenia", "Sun Flower", "Chinese Champac", "Clematix" , "Padauk"}. <span id="right">(10 Marks)
+			</span>
+			<ul>
+				<li>Rose Is red.</li>
+				<li>Jasmine is white.</li>
+				<li>Gardenia is white.</li>
+				<li>Sun Flower is yellow.</li>
+				<li>Chinese Champac is white.</li>
+				<li>Clematis is brown.</li>
+				<li>Padauk is yellow.</li>
+			</ul>
+		</li>
+		<li>Create a web appliction with the following:<br>
+			Login page which contains two text boxes to enter username and password to login and one submit button.Login srvlet which gets username and password from lagin page and check login user is valid or not based on "user" table from the database named "userDB". If login user is valid, it will show welcome meeeage by using username.If not, it will redirect to login page. Write some code for LoginServlet.<span id="right">(10 Marks)</span>
+		</li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

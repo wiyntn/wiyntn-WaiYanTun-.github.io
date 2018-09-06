@@ -1,0 +1,173 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -28px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table, td, th {
+    text-align: center;
+    border:1px solid black;
+}
+
+table {
+	
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Four Year)</p>
+<p>Computer Organization </p>
+<p>Final Examination</p>
+<p>Introduction to Embedded Systems(CT-403)</p>
+<p>September, 2016</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Choose the correct answer.
+		<ol type="i">
+			<li>An integer variable with value 255 is stored i memory location at 0x20000. The processor word length is 8 bits and the processor is a little enian processor. The size of integer is considered as 4 bytes in the system. What is the value held by the memory location 0x20000?<br>
+				<ol type="a">
+					<li>0x00</li>
+					<li>0x01</li>
+					<li>oxFF</li>
+					<li>None of these</li>
+				</ol>
+			</li><br><br><br><br><br>
+			<li>How many memory cells are presented in 2Kb RAM?<br>
+				(a)1024 (b)2048 (c)8192 (d)16384
+			</li><br>
+			<li>The mean Time Between Failure (MTBF) of an embedded product is 5 months and the Mean Time To Repair (MTTR) of the product is 2 weeks. What is the availability of the product?<br>
+			(a)10% (b)89% (c)91% (d)100%
+			 </li><br>
+			 <li>The address bus of 8051 is<br>
+			 	(a)8-bit wide (b)16-bit wide (c)20-bit wide (d)32-bit wide
+			 </li><br>
+			 <li>Which of the following is (are) example(s) of Silcon providers for automotive applications?<br>
+			 	(a)Analog Devices (b)Maxim/Dallas (c)Atmel (d)All of these
+			 </li><br>
+			 <li>Which of the following memory supposts Execute in Place (XIP)?<br>
+			 	(a)EEPROM (b)NAND FLASH (c)NOR FLASH (d)PROM
+			 </li><br>
+			 <li>Accumulator register contains the BCD number 34. What will be the content of the accumulator after executing the following instructions?<br>
+			 	ADD A, #16H<br>
+			 	DA A<br>
+			 	(a)50 (b)4AH (c)50H (d)None of these
+			 </li><br>
+			 <li>Which of the following model is best suited for modelling an embedded system demanding multitasking capabilities with data sharing?<br>
+			 	(a)Communicating Process Model (b)Control DFE (c)DFG (d)Finite State Machine
+			 </li><br>
+			 <li>For a commercial embedded product the sales volume is high during<br>
+			 	(a)product discontinuing (b)product growth (c)product lanunching (d)product maturity
+			 </li><br>
+			 <li>Which of the following is an (are) example(s) of embedded system for data communication?<br>
+			 	(a)USB Mass storage device (b)Digital camera (c)Cell phone (d)Network hubs
+			 </li>
+			 <b id="right">(20 Marks)</b>
+		</ol>
+	</li>
+	<li>Answer <i><b>ANY FOUR</b></i> of the followings:<br>
+		<ol type="a">
+			<li>What are the advantages of PLD over fixed logic devices?</li>
+			<li>Explain the different classifications of embedded systems.</li>
+			<li>Briefly explain the different communication buses used in automotive application.
+			</li>
+			<li>Explain the quality attribute Information Security in the embedded system design context.</li>
+			<li>What is the difference between big-endian and littel-endian processor Give an example of each.
+			</li>
+			<li>What is operational quality attribute? Explain the important operatioal quality attributes to be considered in any embedded system design.
+			</li>
+			<li>Explain the role of embedded systems in automotive domain.
+			</li>
+			<b id="right">(20 Marks)</b>
+		</ol>
+	</li>
+</ol>
+<ol start="3">
+	<li>
+		<ol type="a">
+			<li>Summarize the comparison of embedded system and general purpose computing system with the help of a table.
+			</li>
+			<li>What is Embedded Firmware? What are the different approaches available for Embedded Firmware development?
+			</li>
+			<b id="right">(20 Marks)</b>
+		</ol>
+	</li>
+</ol>
+<ol start="4">
+	<li>
+		<ol type="a">
+			<li>Write an 8051 assembly language program for polling based serial data communication with a PC. The program should configure the serial communication settings as: baudrate = 9600, IStart bit, 8 data bits and 1 Stop bit. The system echoes (send back) the data byte received from the PC to the PC. On receiving a data byte from the SErial port it is indicated through the flashing of an LED connected to a port pin. Use Maxim's MAX232 RS-232 level shigter IC for converting the TTL serial data signal to RS-23 compatible voltage levels. Use on-chip program memory for the storing the program instructions.
+			</li>
+		</ol>
+	</li>
+</ol>
+</body>
+</html>

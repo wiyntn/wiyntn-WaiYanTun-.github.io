@@ -1,0 +1,329 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+</style>
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Mid Tearm Examination</p>
+<p>Computer Application Techique(CS-305)</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Write C# statements for the following:<span id="right">(20 Marks)</span>
+		<ol type="a">
+			<li>Create a Queue collection object and add the name of 10 students.Display the name of all students and then remove 3 students from Queue. Then display all remoed students name.
+			</li>
+			<li>Declare delegate method (delegate int del(int i)) that returns sqrare of i. Write main() method and use the delegate method. Show result on console.
+			</li>
+			<li>Create an array with 4 rows which store the given names string {"cat","dogs","donkey","camel"}.Fine the length of each array element is equal 3 and display in consloe window.(using LAMDA expression)
+			</li>
+			<li>Write a statement that declares int array named numArr that holds value 1,3,5,7 and display average of them on the console window.(Using LINQ extension method)
+			</li>
+			<li>Create a generic dictionary collection object with given data and display them in console window as the following format.<br>
+				[one,First]<br>
+				[two,Second]<br>
+				[three, Third]<br>
+				[four,Fourth]
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Define an abstract class "Shape" that includes abstract method called calculateArea() which return type id (int).Drive two classes called "Circle" and "Rectangle" from Shape.The Circle class has radius 
+				(int) and has overide method int calculateArea()
+				.the Rectangle class has two arrtibutes length(int) and width(int).Which has also override method int calculateArea(). Write necessary constructors for each class. Then write a main method which creates an instance of Crcle and Rectangel. Call the calculatedarea() for cach instance with suitable number of arguments and display the calculate result in console window.
+				<span id="right">(7 marks)</span>
+			</li>
+			<li>Write the C# program that create a delegate which takes a single integer parameter and returns the integer value. Create a class TestDelegate. In this class,<br>
+				- define a number with static integer<br>
+				- define a method named "AddNum" with an integer parameter which calculates to return the sum of given value<br>
+				- define a method named "MultiplyNum" with an integer parameter which calculates to return the multiply result of given value<br>
+				- define a method named "getNum" which returns the class number value.<br>
+				Create two delegate instances (one for sum, one for multiply), callt the methods using these delegate objects and display all results in console window.<span id="right">(8 marks)</span>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Write a program that uses NameValueCollection to store employeeName grouped by rank.(The item's keys should be rank. Its values should e lists of employeeName).Use initalization code to create data for at least three rank levels with two employeeName each. When the user enters a rank, display the employeeNames for that rank.(Hint:use LINQ to get the values you need.)<span id="right">
+				(5 marks)</span>
+			</li>
+			<li>Create a console application project with folowing:<br>
+				Define a generic class named 'Usergenericarray' with a type name for data type. In this class, define an array with generic type name, a constructor method that takes a parameter (int size) to define array size, a method name "getItem" with an integer parameter "index" to return the item of array and a method name "setItem" with an tinteger parameter "index"
+				to return the item of array and a method name "setItem" to set the array's to set the array's item at desired position that two parameters 
+				(an integer for indes and a generic tpe for value).<br>
+				In the main method, create an instance of UserGenericArray class that uses integer for type name and size is 10. set the items with addition of 20by using setItem method. Get all item by using getItem method and display in console window.
+				<br>
+				Create another instance of UserGenericArray class that uses character for type name and add the characters ('U','N','I','V','E','S','I','T','Y').And then displays all items in consloe window.<span id="right">(10 marks)</span>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>Prepare a Cash Budget from the following indormation for the four months (from Januar to April) <span id="right">(10 marks)</span><br>
+				<ul>
+					<li>Opening Cash balance $500.Production units for the year are-
+						<table>
+							<tr id="line">
+								<td>Jan</td>
+								<td>Feb</td>
+								<td>Mar</td>
+								<td>Apr</td>
+								<td>May</td>
+								<td>Jue</td>
+							</tr>
+							<tr>
+								<td>160</td>
+								<td>180</td>
+								<td>200</td>
+								<td>180</td>
+								<td>160</td>
+								<td>200</td>
+							</tr>
+						</table>
+					</li>
+					<li>Estimated sales for the year are-
+						<table>
+							<tr id="line">
+								<td>Nov</td>
+								<td>Dec</td>
+								<td>Jan</td>
+								<td>Feb</td>
+								<td>Mar</td>
+								<td>Apr</td>
+							</tr>
+							<tr>
+								<td>100</td>
+								<td>140</td>
+								<td>90</td>
+								<td>140</td>
+								<td>120</td>
+								<td>150</td>
+							</tr>
+
+						</table>
+					</li>
+					<li>A sale of old office equipment will take place in Feb of $1,100.
+					</li>
+					<li>Materials cost $5 per unit.Material are bought in the three months  before beging used in production and suppliers allow two months credit.
+					</li>
+					<li>All units are sold for $25 each. Debtor are allowed twoo months credit.
+					</li>
+					<li>Variable overheads of $2 is payable for every unit produced. This fee is paid in the month of produed.
+					</li>
+					<li>
+						Rates are payable quarterly starting in Febuary and $700 of each uarter.
+					</li>
+				</ul>
+			</li>
+			<li>
+				A firm has produced the following budgeted at the beginning of the year:
+				<table>
+					<tr>
+						<td>Sales</td>
+						<td>10,000units</td>
+					</tr>
+					<tr>
+						<td>Revenues</td>
+						<td>$200,000</td>
+					</tr>
+					<tr>
+						<td>Materials</td>
+						<td>$35,000</td>
+					</tr>
+					<tr>
+						<td>Labour</td>
+						<td>$40,000</td>
+					</tr>
+					<tr>
+						<td>Variable Overheads</td>
+						<td>$17,500</td>
+					</tr>
+					<tr>
+						<td>Fixed Overheads</td>
+						<td>$60,000</td>
+					</tr>
+					<tr>
+					</tr>
+					<tr>
+						<td>Net profit</td>
+						<td>$47,500</td>
+					</tr>
+				</table>
+				At the end of the year, the sales amounted to 11,100 units and the selling price per unit had been $21.50.<br>
+				The cost of materials was actually $3.65 and labour was $3.90 per unit. Variable overheads amounted to $16,800 and fixed overheads were $63,000.<br>
+				<b>Required:</b>Devise a flexible budget and calculate any variances.<span id="right">(10 marks)</span>
+			</li>
+		</ol>
+	</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li>
+		<ol type="a">
+			<li>The secretary of the Golden Golf club has been approached by a well known intrnational golfer who wishes to retire to the area.The propssalis that the club will purchases a house next to the golf course for $500,000 and in additional pay a salary of $25,000 peer annum for five years for which the golfer will give tution to members. The house will become the property of the golfer.<span id="right">
+				(20 marks)</span><br>
+				It si intended to choose this project and to finance it is as follows:<br>
+				<table>
+					<tr>
+						<th></th>
+						<th>$,000</th>
+						<th>cost of capital</th>
+					</tr>
+					<tr>
+
+						<td>Ordinary share</td>
+						<td>300</td>
+						<td>17%</td>
+					</tr>
+					<tr>
+						<td>Loans</td>
+						<td>200</td>
+						<td>12%</td>
+					</tr>
+				</table>
+				The benefits to the club will be increased membership and the charging of gigher subscriptions particularly by local business.
+				<br>
+				<table>
+					<tr>
+						<th>Year</th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+						<th>5</th>
+					</tr>
+					<tr>
+						<td>Additional subscription Income:</td>
+						<td>180,000</td>
+						<td>250,000</td>
+						<td>300,000</td>
+						<td>250,000</td>
+						<td>150,000</td>
+					</tr>
+					<tr>
+						<td>Additional membership expenses:</td>
+						<td>40,000</td>
+						<td>25,000</td>
+						<td>10,000</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<b>Required:</b>
+				<ol type="a">
+					<li>The weight average cost of capital for the broject.</li>
+					<li>The Net Present Value of this project (Discount at the rate of calculated in (a))
+					</li>
+					<li>The Internal Rate of Return</li>
+					<li>the Pay-back Period</li>
+				</ol>
+				<b>Notes:</b><br>
+				<table style="width:100%">
+					<tr>
+						<td>
+				<b>PV=1/r * (1-1/(1+r)<sup>n</sup>)
+				</b></td>
+				<td>
+				<b>PV=1/(1 + r)<sup>n</sup></b>
+				</td>
+				</tr>
+				<tr>
+					<td>Year 10% 15% 20%</td>
+					<td>Year 10% 15% 20%</td>
+				</tr>
+				<tr>
+					<td>1 0.909 0.870 0.833</td>
+					<td>1 0.909 0.870 0.833</td>
+				</tr>
+				<tr>
+					<td>2 1.736 1.626 1.528</td>
+					<td>2 0.826 0.756 0.964</td>
+				</tr>
+				<tr>
+					<td>3 2.487 2.283 2.106</td>
+					<td>3 0.751 0.658 0.579</td>
+				</tr>
+				<tr>
+					<td>4 3.170 2.855 2.589</td>
+					<td>4 0.683 0.572 0.482</td>
+				</tr>
+
+				</table>
+
+			</li>
+			<li>Write short notes of the following:<br>
+				(i) Finacial Accounting<br>
+				(ii) Investment Managemnt System
+				<span id="right">(10 marks)</span>
+			</li>
+		</ol>
+	</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!Doctype html>
+<html>
+<head>
+<style type="text/css">
+p,h2
+{
+	text-align: center;
+	margin-top: -10px;
+}
+#left,.left
+{
+	float: left;
+}
+#right,.right
+{
+	float: right;
+}
+hr
+{
+	width: 100%;
+	height: 1px;
+	color: black;
+	background-color: black;
+	font-weight: bold;
+}
+
+ol
+{
+	float: left;
+	margin-left: -30px;
+	font-size: 13px;
+	
+}
+.left
+{
+	clear: both;
+	float: left;
+}
+.right1
+
+{
+	list-style-type: none;
+	clear: both;
+	float: right;
+	margin-top: -28%;
+
+}
+#ma,.ma
+{
+	margin-left: -40px;
+}
+#line
+{text-decoration: underline;
+	color: black;
+
+}
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+</style>
+
+</head>
+<body>
+
+<div>
+<p>
+Department of Advanced Science and Technology
+</p>
+<p>University of Computer Studies</p>
+<p>B.C.Sc/B.C.Tech. ( Third Year)</p>
+<p>Computer Organization </p>
+<p>Fianl Examination</p>
+<p>Database Management System(CS-300)</p>
+<p>Septermber 2017</p>
+<p>Zone III</p>
+
+<p id="left">Answer ALL Questions</p>
+<p id="right">Time allowed 3hours.</p>
+
+<hr>
+</div>
+<ol>
+	<li>Choose the correct answer(s) for the following statements.
+		<span id="right"><b>(15 Marks)</b></span><br>
+		(1)_________ operator returns a relation containing all tuples from a specified relation that satisfy a specified condition.<br>
+		(A)Union &nbsp; (B)Restriction &nbsp; (C)Intersect &nbsp; (D)Profect<br><br>
+		(2)__________operator takes a given relation and returns another that is identical to the given one except that at least on of its attributes has different name.<br>
+		(A)JOIN &nbsp; (B)MINUS &nbsp; (C)TIMES &nbsp; (D)RENAME<br>
+		<br>
+		(3)__________is defined to be equivalent to (S JOIN SP)
+		{S#,SNMAE,STATUS,CITY}.<br>
+		(A)S JOIN SP &nbsp; (B)SP SEMIJOIN S &nbsp; <br>(C)S SEMIJOIN SP &nbsp;
+		(D)S SEMIMINUS SP<br><br>
+		(4)An alternative version of the calculus called the ________ in which the range variables range over domains instend of relations.<br>
+		(A)tuple calculus &nbsp; (B)domain calculus &nbsp; <br>
+		(C)relational calculus &nbsp; (D)none of these<br><br>
+		(5)Giive domain calculus solution for the query "Get colors of parts supplied by supplier S1".<br>
+		(A)PX.COLOR WHERE EXISTS SPJX (SPJX.P# = PX.P# AND SPJX.S#('S1'))<br>
+
+
+		(B)COLORX WHERE EXISTS PX(P (P#,PX,COLOR:COLORX) AND SPJ(S#,S#('S1').P#:PX))<br>
+		(C)COLORX WHERE FORALL PX(P (P#:PX,COLOR:COLORX) AND SPJ(S#:S#('S1'),P3:PX))<br>
+		(D)Solution omitted<br><br>
+		(6)The ________ supports an additional form of Boolean expression; refer to as a membership condition.<br>
+		(A)relational algebra &nbsp; (B)tuple calculus &nbsp;<br>
+		(C)domain calculus &nbsp; (D)none of these<br><br>
+
+		(7)Which stage in the optimization process involves the construction of a set of candidaate query plans?<br>
+		(A)First &nbsp; (B)Final &nbsp; (C)Third &nbsp; (D)Second<br><br>
+		(8)In implementing the relational operator,<b>join</b> for the case of <b>R JOIN S </b> on common <b>C</b> with the cardinality of <b>m</b> in <b>R</b> and n in S, the procedure requires that <b>R</b> and <b>S</b> are both physically stored in sequence by values of the join attribute <b>C</b> is___________.<br>
+		(A)Brute Force &nbsp; (B)Index Lookkup &nbsp; <br>
+		(C)Hash Lookup &nbsp; (D)Merge.<br><br>
+		(9)________ is the process of removing a component of the query that has just one variable in common with the rest of the query.<br>
+		(A)Detachment &nbsp; (B)Tuple subsitution<br>
+		(C)Decomposition &nbsp; (D)Transformation<br><br>
+		(10)WITH CHECK OPTION, means that INSERTs and ______ on the view will be rejected if they violate any integrity constraint implied by the view-defining expression.<br>
+		(A)CREATEs &nbsp; (B)DELETEs &nbsp; (C)UPDATEs &nbsp; <br>
+		(D)SELECTs<br><br>
+		(11)No_______ operation must ever be allowed to leave any relvar in a state that violates its own predicate.<br>
+		(A)select &nbsp; (B)insert &nbsp; (C)update &nbsp; (D)delete
+		<br><br>
+		(12)________ allow the same data to be seen by different users in same ways at the same time.<br>
+		(A)Shapshots &nbsp; (B)Views &nbsp; (C)Base relvars &nbsp;
+		<br>(D)None of these<br><br>
+		(13)An operator called IS_UNK, takes a single scalar expression operand and returns _______ if that operand evaluates to UNK and false otherwise.<br>
+		(A)true &nbsp; (B)false &nbsp; (C)unk &nbsp; (D)none ot these<br><br>
+		(14)Using three value logic if A=3, B=4, C=UNK the result of A<B OR B > C is <br>
+		(A)true &nbsp; (B)unk &nbsp; (C)false &nbsp; (D)none of the above<br><br>
+		(15)A query "Get supplier names for suppliers whose city is not knownn" is <br>
+		(A)SELECT S.* FROM S WHERE S.CITY IS NULL;<br>
+		(B)SELECT S.SNAME FROM S WHERE S.CITY = NULL;<br>
+		(C)SELECT S.SNAME FROM S WHERE S.CITY IS NULL;<br>
+		(D)SELECT S.SNAME FROM S WHERE S.CITY IS NOT NULL;<br><br>
+
+</li>
+<li>Consider the suppliers-parts-profects database schema;
+	S(S#,SNAME,STATUS,CITY)<br>
+	P(P#,PNAME,COLOR,WIGHT,CITY)<br>
+	J(J#,JNAME,CITY)<br>
+	SPJ(S#,P#,J#,QTY)<br>
+
+
+	<br>
+	<b>S</b><br>
+	<table>
+		<tr>
+			<th>S#</th>
+			<th>SNAME</th>
+			<th>STATUS</th>
+			<th>CITY</th>
+		</tr>
+		<tr>
+			<td>S1</td>
+			<td>Smith</td>
+			<td>20</td>
+			<td>London</td>
+		</tr>
+		<tr>
+			<td>S2</td>
+			<td>Jones</td>
+			<td>10</td>
+			<td>Paris</td>
+		</tr>
+		<tr>
+			<td>S3</td>
+			<td>Blake</td>
+			<td>30</td>
+			<td>Paris</td>
+		</tr>
+		<tr>
+			<td>S4</td>
+			<td>Clark</td>
+			<td>20</td>
+			<td>London</td>
+		</tr>
+		<tr>
+			<td>S5</td>
+			<td>Adams</td>
+			<td>30</td>
+			<td>Athens</td>
+		</tr>
+	</table><br>
+
+
+	<b>P</b>
+	<table>
+		<tr>
+			<th>P#</th>
+			<th>PNAME</th>
+			<th>COLOR</th>
+			<th>WIGHT</th>
+			<th>CITY</th>
+		</tr>
+		<tr>
+			<td>P1</td>
+			<td>Nut</td>
+			<td>Red</td>
+			<td>12.0</td>
+			<td>London</td>
+		</tr>
+		<tr>
+			<td>P2</td>
+			<td>Bolt</td>
+			<td>Green</td>
+			<td>17.0</td>
+			<td>Paris</td>
+		</tr>
+		<tr>
+			<td>P3</td>
+			<td>Screw</td>
+			<td>Blue</td>
+			<td>17.0</td>
+			<td>Rome</td>
+		</tr>
+		<tr>
+			<td>P4</td>
+			<td>Screw</td>
+			<td>Red</td>
+			<td>14.0</td>
+			<td>London</td>
+		</tr>
+		<tr>
+			<td>P5</td>
+			<td>Cam</td>
+			<td>Blue</td>
+			<td>12.0</td>
+			<td>Rairs</td>
+		</tr>
+		<tr>
+			<td>P6</td>
+			<td>Cog</td>
+			<td>Red</td>
+			<td>19.0</td>
+			<td>London</td>
+		</tr>
+	</table><br>
+
+
+	<b style="float:left">J</b><br>
+	<table style="float:left">
+		<tr>
+			<th>J#</th>
+			<th>JNAME</th>
+			<th>CITY</th>
+		</tr>
+		<tr>
+			<td>J1</td>
+			<td>Sorter</td>
+			<td>Paris</td>
+		</tr>
+		<tr>
+			<td>J2</td>
+			<td>Display</td>
+			<td>Pome</td>
+		</tr>
+		<tr>
+			<td>J3</td>
+			<td>OCR</td>
+			<td>Athens</td>
+		</tr>
+		<tr>
+			<td>J4</td>
+			<td>Console</td>
+			<td>Athens</td>
+		</tr>
+		<tr>
+			<td>J5</td>
+			<td>RAID</td>
+			<td>London</td>
+		</tr>
+		<tr>
+			<td>J6</td>
+			<td>EDS</td>
+			<td>Oslo</td>
+		</tr>
+		<tr>
+			<td>J7</td>
+			<td>Tape</td>
+			<td>London</td>
+		</tr>
+	</table><br>
+
+
+	<b style="float:right">SPJ</b><br>
+	<table style="float:right;width:50%">
+		<tr>
+			<th>S#</th>
+			<th>P#</th>
+			<th>J#</th>
+		<th>QTY</th>
+		</tr>
+		<tr>
+			<td>S1</td>
+			<td>P1</td>
+			<td>J1</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>S1</td>
+			<td>P2</td>
+			<td>J4</td>
+			<td>200</td>
+		</tr>
+		<tr>
+			<td>S1</td>
+			<td>P3</td>
+			<td>J5</td>
+			<td>400</td>
+		</tr>
+		<tr>
+			<td>S1</td>
+			<td>P4</td>
+			<td>J1</td>
+			<td>200</td>
+		</tr>
+		<tr>
+			<td>S1</td>
+			<td>P5</td>
+			<td>J2</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>S1</td>
+			<td>P6</td>
+			<td>J2</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>S2</td>
+			<td>P1</td>
+			<td>J4</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>S2</td>
+			<td>P2</td>
+			<td>J5</td>
+			<td>400</td>
+		</tr>
+		<tr>
+			<td>S3</td>
+			<td>P2</td>
+			<td>J3</td>
+			<td>200</td>
+		</tr>
+		<tr>
+			<td>S4</td>
+			<td>P2</td>
+			<td>J7</td>
+			<td>200</td>
+		</tr>
+		<tr>
+			<td>S4</td>
+			<td>P4</td>
+			<td>J7</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>S4</td>
+			<td>P5</td>
+			<td>J2</td>
+			<td>400</td>
+		</tr>
+
+	</table><br>
+	<ol type="a">
+		<li>Write the following queries in relational algebra and calculus (tuple oriented) statements.<span id="right"><b>(30 Marks)</b></span><br>
+			(1)Get project numbers for projects supplied entirely by supplier S1.<br>
+			(2)Get supplier names for supppliers who supply all parts.<br>
+			(3)Get name of parts supplied by supplier S2.
+		</li>
+		<li>Describe above algebra aueries step(s) by showing every intermediate table(s) that is derived inn each step until the final results obtained.
+		</li>
+	</ol>
+
+</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<li>
+	<ol type="a">
+		<li>Perform the optimization steps for the query "Get names of suppliers who supply part 'P3' using the supplier-part-shipment database schema and draw query tree for each quety. Assume the database contains 100 supplier s and 10,000 shipments, of which only 100  are for part P3 and 50 tuples at most can stay in main memory.<b id="right">(14 Marks)
+		</b></li>
+		<li>Tansform given relational algebra expressions into equivalent algebra expression using transformation rules.<b id="right">(6 Marks)</b>
+			<ol>
+				<li>(S WHETE CITY='London')WHETE STATUS = 20</li>
+				<li>(S MINUS ( ( S JON SPJ) WHETE P# = p# ('P2')<br>
+					{S#, SNAME,STATUS,CITY}) {S#,CITY}
+
+				</li>
+				<li>S JOIN ( P {CITY}, MINUS J {CITY} )</li>
+			</ol>
+		</li>
+	</ol>
+</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
+
+<li>
+	<ol type="a">
+		<li>Write down the following view definitions using SQL facilities.<span id="right"><b>(7 Marks)</b></span>
+			<ol>
+				<li>Define a view over the suppliers-parts-projects database consisting of all part-color/part-city combinations.
+				</li>
+				<li>Define relvar SP of the suppliers and parts databse as a view of relvar SPJ of the suppliers-parts-profects database.
+				</li>
+				<li>Define a view over the suppliers-parts-profects database consisting of all profects that are supplied by supplier S1 and use part P1.</li>
+			</ol>
+		</li>ss
+		<li>Consider the suppliers-parts database there are five suppliers in the database.<br>
+			Let view LS be defined as<br>
+			VAR LS VIEW<br>
+			S WHETE CITY = 'London'<br>
+			A sample value for this view if as shown in the following table:
+
+
+			
+			<table>
+				<tr>
+					<th>S#</th>
+					<th>SNAME</th>
+					<th>STATUS</th>
+					<th>CITY</th>
+				</tr>
+				<tr>
+					<td>S1</td>
+					<td>Smith</td>
+					<td>20</td>
+					<td>London</td>
+
+				</tr>
+				<tr>
+					<td>S4</td>
+					<td>Clark</td>
+					<td>20</td>
+					<td>London</td>
+				</tr>
+			</table>
+
+			<span>Consider the follwing view updatable mechanism on the view LS.<b id="right">(8 Marks)</b></span>
+			<ol type="i">
+				<li>An attempt to insert the tuple (S6,'Green',20,'London') into view will success or fail.Why?
+				</li>
+				<li>An attempt to update the view tuple ('S1', 'Smith', 20, 'London') to ('S1','Smith', 20,'Athens')will success or fail? Why?
+				</li>
+				<li>An attempt to delete a tuple (S1, Smith, 20,London) from view will success of fail. The tuple from which relvar will be deleted?
+				</li>
+			</ol>
+		</li>
+	</ol>
+</li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<li>
+	<ol type="a">
+		<li>Let relation R contain exactly the following tuples with the three attributes called A,B and C, respectively, and every attribute is of type INTEGER.<span id="right">
+			(10 Marks)</span>
+			<table align="center">
+				<tr>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>5</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>UNK</td>
+					<td>5</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>UNK</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>UNK</td>
+					<td>UNK</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>UNK</td>
+					<td>UNK</td>
+					<td>UNK</td>
+				</tr>
+			</table>
+
+			<span>If V is a range variable that ranges over R, state the truth values using three value logic (3VL) truth tables <i>by drawing truth table for each of the following expressions:</i></span>
+			<ol type="i">
+				<li>EXISTS V(V.B > 4)</li>
+				<li>EXISTS V(V.B > 3 AND V.C > 5)</li>
+				<li>EXISTS V (MAYBE (IS_UNK (V.C)))</li>
+				<li>FORALL V (V.A > 1)</li>
+				<li>FORALL V (MAYBE (V.A > V.B))</li>
+			</ol>
+
+		</li><br><br><br><br><br>
+		<li>Consider the following two tables:<span id="right">(10 Marks)</span><br>
+			<b>Student</b>
+
+			<table>
+				<tr>
+					<td>StdNO</td>
+					<td>StdName</td>
+					<td>Course</td>
+				</tr>
+				<tr>
+					<td>S-01</td>
+					<td>Rose</td>
+					<td>001</td>
+				</tr>
+				<tr>
+					<td>S-02</td>
+					<td>Cherry</td>
+					<td>002</td>
+
+				</tr>
+				<tr>
+					<td>S-03</td>
+					<td>John</td>
+					<td>NULL</td>
+				</tr>
+				<tr>
+					<td>S-04</td>
+					<td>Smith</td>
+					<td>003</td>
+				</tr>
+			</table><br>
+
+			<b>Course</b>
+			<table>
+				<tr>
+					<td>CNo</td>
+					<td>CName</td>
+				</tr>
+				<tr>
+					<td>001</td>
+					<td>Java</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>C++</td>
+				</tr>
+				<tr>
+					<td>003</td>
+					<td>Networking</td>
+				</tr>
+				<tr>
+					<td>004</td>
+					<td>Cisco</td>
+
+				</tr>
+			</table>
+
+			<ol type="i">
+				<li>List the tuples for INNER JOIN ON Student.Course = Course.CNo
+				</li>
+				<li>List the tuples for <b>LEFT JOIN ON Student.Course  Course.CNo</b>
+				</li>
+				<li>
+					List the tuples for <b>RIGH JOIN ON Student.Course = Coruse.CNo</b>
+				</li>
+				<li>
+					List the tuples for<b> FULL JOIN ON Student.Course = Course = Course.CNo</b>
+				</li>
+				<li>List the tuples for <b>LEFT JOIN ON Student .Course = Course.CNo ORDER BY Student.StdName DESC
+				</b></li>
+			</ol>
+
+		</li>
+	</ol>
+</li>
+
+</ol>
+</body>
+</html>
